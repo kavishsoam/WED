@@ -1,0 +1,74 @@
+.matching-container {
+    padding: 150px 0px 30px 0px;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 1220px) {
+    .container {
+        width: 970px;
+    }
+}
+@media screen and (max-width:1000px){
+section {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: #f9f9f9;
+}
+.col-xl-9.col-lg-9.col-sm-12.col-md-12.col-sm-12.col-12{
+overflow:auto;
+}
+.col-xl-9.col-lg-9.col-sm-12.col-md-12.col-sm-12.col-12::-webkit-scrollbar,
+.col-xl-9.col-lg-9.col-sm-12.col-md-12.col-sm-12.col-12 .tb::-webkit-scrollbar{
+height: 5px;
+}
+.col-xl-9.col-lg-9.col-sm-12.col-md-12.col-sm-12.col-12 .tb{
+overflow:auto;
+}
+.table-responsive {
+width: 680px;
+}
+.matching-container{
+width:100%;
+}
+}
+@media screen and (max-width: 990px) {
+    .container {
+        width: 760px;
+    }
+
+    .matching-container {
+        padding: 90px 0px 30px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .matching-container {
+padding: 180px 0px 80px 0px;
+color: black;
+}
+section{
+display:block;
+}
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        width: 100%;
+    }
+
+    .matching-container {
+        padding: 95px 0px 30px 0px;
+    }
+
+    .arrow_up {
+        bottom: 52px;
+    }
+}
+
+//Aashish Css
+.container{min-height:calc(100vh - 500px);}  

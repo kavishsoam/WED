@@ -1,0 +1,39 @@
+
+.matching-container {
+    padding: 160px 0px 50px 0px;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 1220px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        width: 760px;
+    }
+
+    .matching-container {
+        padding: 150px 0px 50px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        width: 100%;
+    }
+
+    .matching-container {
+        padding: 123px 0px 50px 0px;
+    }
+
+
+}

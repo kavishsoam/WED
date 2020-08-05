@@ -1,0 +1,48 @@
+.matching-container {
+    padding: 170px 0px 70px 0px;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 1220px) {
+    .matchings-links {
+        text-align: right;
+    }
+
+    .aside-left .matchings-links a {
+        display: inline-block;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+
+    .matching-container {
+        padding: 150px 0px 60px 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .matching-container {
+        padding: 164px 0px 70px 0px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        width: 100%;
+    }
+
+    .matching-container {
+        padding: 114px 0px 60px 0px;
+    }
+
+    .arrow_up {
+        bottom: 52px;
+    }
+
+ 
+}
+
+//Aashish Css
+.container{min-height:calc(100vh - 500px);}  

@@ -1,0 +1,195 @@
+.find-special-someone .find-icon .icon-1 .icon-2::after,
+.find-someone .find-icon .icon-3 .icon-4::after,
+.find-someone .find-icon .icon-5 .icon-6::after {
+    content: "";
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #a6a6a6;
+    position: absolute;
+    top: 22%;
+    right: -17%;
+    transform: translate(-50%, -50%);
+}
+
+.forgot-password {
+    margin-top: 97px;
+}
+
+@media screen and (max-width: 1220px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        width: 760px;
+    }
+    .find-someone .find-icon .icon-1 .icon-2::after,
+    .find-someone .find-icon .icon-3 .icon-4::after,
+    .find-someone .find-icon .icon-5 .icon-6::after {
+        right: -14%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .container {
+        width: 100%;
+    }
+    .find-someone .find-icon .icon-1 .icon-2::after,
+    .find-someone .find-icon .icon-3 .icon-4::after,
+    .find-someone .find-icon .icon-5 .icon-6::after {
+        top: 22%;
+    }
+    .find-someone .find-icon .icon-1 .icon-2::after,
+    .find-someone .find-icon .icon-3 .icon-4::after,
+    .find-someone .find-icon .icon-5 .icon-6::after {
+        right: -14%;
+    }
+    .forgot-password {
+        margin-top: 72px;
+    }
+    .arrow_up {
+        bottom: 52px;
+    }
+    .forgot-password {
+        margin-top: 29px;
+        padding-bottom: 20px;
+    }
+    .forgot-password .forgot-password-form {
+        margin-bottom: 0px;
+    }
+}
+
+//Aashish Css.....
+.container {
+    min-height: calc(100vh - 500px);
+}
+
+.select-custome {
+    width: 150px !important;
+}
+
+
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 0 10px;
+}
+
+.row {
+    margin: 0 -5px;
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #283338;
+    color: white;
+    border-radius: 15px;
+}
+
+.fa {
+    font-size: 50px;
+}
+
+.cardToggle {
+    box-shadow: 2px 1px 15px 5px #be8a50;
+    padding: 16px;
+    text-align: center;
+    background-color: #283338;
+    color: white;
+    border-color: #be8a50;
+    border-radius: 15px;
+    border: 3px solid #f8f6f4;
+    transition: box-shadow 0.2s ease-out;
+}
+
+.form-control {
+    height: calc(2.25rem + 4px);
+    margin-right: 10px;
+}
+
+.form-group {
+    margin-bottom: 0rem !important;
+}
+
+a#register {
+    border-radius: 5px;
+}
+
+.disableCss {
+    background-color: #dddddd !important;
+}
+
+button {
+    border-radius: 5px !important;
+}
+
+.signup-page-1 form input {
+    margin: 0px 0px !important;
+}
+
+.signup-page-1 form select:focus {
+    border: none!important;
+    box-shadow: 0 0 0 0.2rem #ffdfbbc4 !important;
+}
+
+.signup-page-1 {
+    border-radius: 15px !important;
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+    box-shadow: 13px 13px 50px 2px #9a9191 !important;
+}
+
+.find-special-someone {
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+}
+
+.signup-page-1 h4 {
+    text-align: start;
+}
+
+.signup-page-1 form p {
+    margin: 0px 0px 25px 10px!important;
+}

@@ -1,0 +1,518 @@
+<section>
+    <div class="signup-2">
+        <form [formGroup]="registrationForm4">
+            <div class="container">
+                <div class="row signup-form-2">
+
+                    <div class="col-xl-12">
+                        <h2>Welcome!</h2>
+                        <h3>Desired Partner Profile.</h3>
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showHideCollapsible()">
+                            <span>
+                        <h2>Basic Details</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showBasicDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showBasicDetails"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <main class="col-xl-12 " *ngIf="showBasicDetails" style="display: contents;">
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12 edit-1">
+                            <div class="col-md-8">
+                                <div class="column-2 edit-1">
+                                    <select class="form-control" data-toggle="tooltip" data-placement="top" title="Age" formControlName="partnerAge" placeholder="Age*">
+                                    <option value = '' selected disabled>Age*</option>
+                                    <option value = '18'>18</option>
+                                    <option value = '19'>19</option>
+                                    <option value = '20'>20</option>
+                                    <option value = '21'>21</option>
+                                    <option value = '30'>30</option>
+                                    <option value = '40'>40</option>
+                                    <option value = '50'>50</option>
+                                    <option value = '60'>60</option>
+                                    <option value = '70'>70</option>                                
+                                </select>
+
+                                    <!-- <a href="javascript:;" class="editIconClass" *ngIf = "showAgeEditButton" (click) = "editSaveAgeFunc(1)"><i class="fas fa-pencil-alt"></i> </a>
+                                <a href="javascript:;" class="editIconClass" *ngIf = "!showAgeEditButton" (click) = "editSaveAgeFunc(2)"> <i class="fas fa-save"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt10">
+                                <div class="column-3 filter_1">
+                                    <a href="javascript:;" class="filterBtnClass" [ngClass]="{'filterClass': ageFilter}" (click)="changeAgeFilterOption()">Filter {{ageFilter? 'ON' : 'OFF'}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12 edit-1">
+                            <div class="col-md-8">
+                                <div class="column-2 edit-1">
+                                    <select class="form-control" data-toggle="tooltip" data-placement="top" title="Age" formControlName="partnerMaritalStatus" placeholder="Age*">
+                                <option value = '' selected disabled>Marital Status*</option>
+                                <option value = 'Single'>Single</option>
+                                <option value = 'Married'>Married</option>
+                                <option value = 'Divorced'>Divorced</option>
+                                <option value = 'Widowed'>Widowed</option>                              
+                                </select>
+
+                                    <!-- <a href="#" class="editIconClass" *ngIf = "showMaritalEditBtn" (click) = "editSaveMaritalStatusFunc(1)"><i class="fas fa-pencil-alt"></i> </a>
+                                <a href="#" class="editIconClass" *ngIf = "!showMaritalEditBtn" (click) = "editSaveMaritalStatusFunc(2)"> <i class="fas fa-save"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt10">
+                                <div class="column-3 filter_1">
+                                    <a href="javascript:;" class="filterBtnClass" [ngClass]="{'filterClass': maritalStatusFilter}" (click)="changeMaritalStatusFilterOption()">Filter {{maritalStatusFilter? 'ON' : 'OFF'}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12 edit-1">
+                            <div class="col-md-8">
+                                <div class="column-2 edit-1">
+                                    <select class="form-control" data-toggle="tooltip" data-placement="top" title="Country" formControlName="partnerCountry" (change)="selectedCountry($event.target.value)">
+                                <option value ='' selected disabled>Country</option>
+                                <!-- <option value = ''>Country</option> -->
+                                <option *ngFor = "let data of countryArr" [value]="data.country">{{data.country}}</option>
+                            </select>
+
+                                    <!-- <a href="#" class="editIconClass"><i class="fas fa-pencil-alt"></i> </a>
+                                <a href="#" class="editIconClass"> <i class="fas fa-save"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt10">
+                                <div class="column-3 filter_1">
+                                    <a href="javascript:;" class="filterBtnClass" [ngClass]="{'filterClass': countryFilter}" (click)="changeCountryFilterOption()">Filter {{countryFilter? 'ON' : 'OFF'}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerCity" title="City">
+                                <option value ='' selected disabled>City</option>
+                                <option [value]="data.name" *ngFor="let data of NewstatesArr" >{{data.name}}</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerPhysicalStatus" title="Physical Status">
+                                <option value = '' selected disabled>Physical Status</option>
+                                <option value = 'Normal'>Normal </option>
+                                <option value = 'Physically Challenged'>Physically Challenged</option>
+                            </select>
+                        </div>
+                    </main>
+
+                    <div class="col-xl-12">
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showEducationCollapsible()">
+                            <span>
+                        <h2>Education & Work</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showEducationDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showEducationDetails"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <main class="col-xl-12 " *ngIf="showEducationDetails" style="display: contents;">
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12 edit-1">
+                            <div class="col-md-8">
+                                <div class="column-2 edit-1">
+                                    <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerIncome" title="Income">
+                                <option value = '' selected disabled>Income</option>
+                                <option value = '4000-8000'>4000-8000 </option>
+                                <option value = '9000-14000'>9000-14000</option>
+                                <option value = '15000-20000'>15000-20000 </option>
+                                <option value = '20000-Above'>20000-Above </option>
+                            </select>
+                                    <!-- 
+                                <a href="#" class="editIconClass"><i class="fas fa-pencil-alt"></i> </a>
+                                <a href="#" class="editIconClass"> <i class="fas fa-save"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt10">
+                                <div class="column-3 filter_1">
+                                    <a href="javascript:;" class="filterBtnClass" [ngClass]="{'filterClass': incomeFilter}" (click)="changeIncomeFilterOption()">Filter {{incomeFilter? 'ON' : 'OFF'}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerEducation" title="Education">
+                                <option value = '' selected disabled>Education</option>
+                                <option value = 'Uneducated'>Uneducated</option>
+                                <option value = 'Elementary'>Elementary</option>
+                                <option value = 'Secondary'>Secondary</option>
+                                <option value = 'Higher Secondary'>Higher Secondary </option>
+                                <option value = 'Diploma'>Diploma </option>
+                                <option value = 'BA'>BA</option>
+                                <option value = 'Master'>Master</option>
+                                <option value = 'PhD'>PhD</option>
+                                <option value = 'On a MA Scholarship'>On a MA Scholarship</option>
+                                <option value = 'On a PhD Scholarship'>On a PhD Scholarship</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerEmployedIn" title="Employed In">
+                                <option value = '' selected disabled>Employed In</option>
+                                <option value = 'Government'>Government</option>
+                                <option value = 'Private'>Private</option>
+                                <option value = 'Self Employed'>Self Employed</option>
+                                <option value = 'Not Working'>Not Working </option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerOccupation" title="Occupation">
+                                <option value = '' selected disabled>Occupation</option>
+                                <option value = 'Manager'>Manager </option>
+                                <option value = 'Software Developer'>Software Developer</option>
+                                <option value = 'Engineer'>Engineer </option>
+                                <option value = 'Scholarship'>Scholarship </option>
+                            </select>
+                        </div>
+
+
+
+
+                    </main>
+                    <div class="col-xl-12">
+                        <!-- <h2>Welcome!</h2> -->
+                        <!-- <h3>Hi! We would love to know about you and your family..</h3> -->
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showReligionCollapsible()">
+                            <span>
+                        <h2>Religion & Ethnicity</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showReligionDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showReligionDetails"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <main class="col-xl-12 " *ngIf="showReligionDetails" style="display: contents;">
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12 edit-1">
+                            <div class="col-md-8">
+                                <div class="column-2 edit-1">
+                                    <select class="form-control" data-toggle="tooltip" data-placement="top" title="Religion" formControlName="partnerReligion" placeholder="Religion*">
+                                <option value = '' selected disabled>Religion*</option>
+                                <option value = 'Islam'>Islam</option>
+                                <option value = 'Other'>Other</option>                               
+                                </select>
+                                    <!-- 
+                                <a href="#" class="editIconClass"><i class="fas fa-pencil-alt"></i> </a>
+                                <a href="#" class="editIconClass"> <i class="fas fa-save"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt10">
+                                <div class="column-3 filter_1">
+                                    <a href="javascript:;" class="filterBtnClass" [ngClass]="{'filterClass': religionFilter}" (click)="changeReligionFilterOption()">Filter {{religionFilter? 'ON' : 'OFF'}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12 edit-1">
+                            <div class="col-md-8">
+                                <div class="column-2 edit-1">
+                                    <select class="form-control" data-toggle="tooltip" data-placement="top" title="Language " formControlName="partnerLanguage" placeholder="Language *">
+                                <option value = '' selected disabled>Language *</option>
+                                <option value = 'Arabic'>Arabic</option>
+                                <option value = 'English'>English</option>
+                                <option value = 'Spanish'>Spanish</option>
+                                <option value = 'French'>French</option> 
+                                <option value = 'Other'>Other</option>                               
+                            </select>
+
+                                    <!-- <a href="#" class="editIconClass"><i class="fas fa-pencil-alt"></i> </a>
+                                <a href="#" class="editIconClass"> <i class="fas fa-save"></i></a> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt10">
+                                <div class="column-3 filter_1">
+                                    <a href="javascript:;" class="filterBtnClass" [ngClass]="{'filterClass': toungeFilter}" (click)="changeToungeFilterOption()">Filter {{toungeFilter? 'ON' : 'OFF'}}</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Mathab" formControlName="partnerMathab" placeholder="Mathab*">
+                                <option value = '' selected disabled>Mathab*</option>
+                                <option value = 'Sunni'>Sunni</option>
+                                <option value = 'Shia'>Shia</option>
+                                <option value = 'Sufi'>Sufi</option>
+                                <option value = 'Other'>Other</option>                               
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerMathab').hasError('required') &&  registrationForm4.get('partnerMathab').dirty)}" *ngIf=" registrationForm4.get('partnerMathab').hasError('required') &&  registrationForm4.get('partnerMathab').dirty"
+                                style="color:red;font-size:13px!important">*Mathab must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerMathab').hasError('pattern') &&  registrationForm4.get('partnerMathab').dirty" style="color:red;font-size:13px!important">*Mathab accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Tribe " formControlName="partnerTribe" placeholder="Tribe *">
+                                <option value = '' selected disabled>Tribe *</option>
+                                <option value = 'قبيلي بدو'>قبيلي بدو</option>
+                                <option value = 'قبيلي حضر'>قبيلي حضر</option>
+                                <option value = 'غير قبيلي'>غير قبيلي</option>
+                                <option value = 'أخرى'>أخرى</option>                           
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerTribe').hasError('required') &&  registrationForm4.get('partnerTribe').dirty)}" *ngIf=" registrationForm4.get('partnerTribe').hasError('required') &&  registrationForm4.get('partnerTribe').dirty"
+                                style="color:red;font-size:13px!important">*Tribe must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerTribe').hasError('pattern') &&  registrationForm4.get('partnerTribe').dirty" style="color:red;font-size:13px!important">*Tribe accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Tribe Name " formControlName="partnerTribeName" placeholder="Tribe Name*">
+                                <option value = '' selected disabled>Tribe Name *</option>
+                                <option value = 'قبيلي بدو'>قبيلي بدو</option>
+                                <option value = 'قبيلي حضر'>قبيلي حضر</option>
+                                <option value = 'غير قبيلي'>غير قبيلي</option>
+                                <option value = 'أخرى'>أخرى</option>                           
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerTribeName').hasError('required') &&  registrationForm4.get('partnerTribeName').dirty)}" *ngIf=" registrationForm4.get('partnerTribeName').hasError('required') &&  registrationForm4.get('partnerTribeName').dirty"
+                                style="color:red;font-size:13px!important">*Tribe Name must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerTribeName').hasError('pattern') &&  registrationForm4.get('partnerTribeName').dirty" style="color:red;font-size:13px!important">*TribeName accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Culture" formControlName="partnerCulture" placeholder="Culture*">
+                                <option value = '' selected disabled>Culture*</option>
+                                <option value = 'I believe in our cultural rules and stick to them' >I believe in our cultural rules and stick to them*</option>
+                                <option value = 'Moderate follow my cultural Rules ' >Moderate follow my cultural Rules *</option>
+                                <option value = "I don't like to follow cultural Rules" >I don't like to follow cultural Rules*</option>
+                                <option value = 'I am more westernised' >I am more westernised*</option>
+                                <option value = 'Other' >Other*</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerCulture').hasError('required') &&  registrationForm4.get('partnerCulture').dirty)}" *ngIf=" registrationForm4.get('partnerCulture').hasError('required') &&  registrationForm4.get('partnerCulture').dirty"
+                                style="color:red;font-size:13px!important">*Culture must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerCulture').hasError('pattern') &&  registrationForm4.get('partnerCulture').dirty" style="color:red;font-size:13px!important">*Culture accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Family Gatherings" formControlName="partnerFamilyGatherings" placeholder="Family Gatherings*">
+                                <option value = '' selected disabled>FamilyGatherings*</option>
+                                <option value = 'Segregated'>Segregated</option>                       
+                                <option value = 'Mixed'>Mixed</option>
+                                <option value = 'Depends'>Depends</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerFamilyGatherings').hasError('required') &&  registrationForm4.get('partnerFamilyGatherings').dirty)}" *ngIf=" registrationForm4.get('partnerFamilyGatherings').hasError('required') &&  registrationForm4.get('partnerFamilyGatherings').dirty"
+                                style="color:red;font-size:13px!important">*Family Gatherings must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerFamilyGatherings').hasError('pattern') &&  registrationForm4.get('partnerFamilyGatherings').dirty" style="color:red;font-size:13px!important">*Family Gatherings accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Hijab" formControlName="partnerHijab" placeholder="Hijab*">
+                                <option value = '' selected disabled>Hijab*</option>
+                                <option value = 'Niqab'>Niqab</option>                       
+                                <option value = 'Hijab'>Hijab</option>
+                                <option value = 'Non-Hijab'>Non-Hijab</option>
+                                <option value = 'Depends'>Depends</option>
+                                <option value = 'Others'>Others</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerHijab').hasError('required') &&  registrationForm4.get('partnerHijab').dirty)}" *ngIf=" registrationForm4.get('partnerHijab').hasError('required') &&  registrationForm4.get('partnerHijab').dirty"
+                                style="color:red;font-size:13px!important">*Hijab must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerHijab').hasError('pattern') &&  registrationForm4.get('partnerHijab').dirty" style="color:red;font-size:13px!important">*Hijab accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Abaya" formControlName="partnerAbaya" placeholder="Abaya*">
+                                <option value = '' selected disabled>Abaya*</option>
+                                <option value = 'On the head'>On the head</option>                       
+                                <option value = 'On the Shoulder'>On the Shoulder</option>
+                                <option value = 'Colored Abaya'>Colored Abaya</option>
+                                <option value = 'No Abaya'>No Abaya</option>
+                                <option value = 'Depends'>Depends</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerAbaya').hasError('required') &&  registrationForm4.get('partnerAbaya').dirty)}" *ngIf=" registrationForm4.get('partnerAbaya').hasError('required') &&  registrationForm4.get('partnerAbaya').dirty"
+                                style="color:red;font-size:13px!important">*Abaya must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerAbaya').hasError('pattern') &&  registrationForm4.get('partnerAbaya').dirty" style="color:red;font-size:13px!important">*Abaya accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Abaya" formControlName="partnerFamilyStatus" placeholder="Family Status*">
+                                <option value = '' selected disabled>Family Status*</option>
+                                <option value = 'Middle'>Middle</option>                       
+                                <option value = 'Class'>Class</option>
+                                <option value = 'Upper Class'>Upper Class</option>
+                                <option value = 'Rich'>Rich</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registrationForm4.get('partnerFamilyStatus').hasError('required') &&  registrationForm4.get('partnerFamilyStatus').dirty)}" *ngIf=" registrationForm4.get('partnerFamilyStatus').hasError('required') &&  registrationForm4.get('partnerFamilyStatus').dirty"
+                                style="color:red;font-size:13px!important">*Family Status must be filled.</h1>
+                            <h1 *ngIf="registrationForm4.get('partnerFamilyStatus').hasError('pattern') &&  registrationForm4.get('partnerFamilyStatus').dirty" style="color:red;font-size:13px!important">*Family Status accepts character only.</h1>
+                        </div>
+                    </main>
+                    <div class="col-xl-12">
+                        <!-- <h2>Welcome!</h2> -->
+                        <!-- <h3>Hi! We would love to know about you and your family..</h3> -->
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showPhysicalCollapsible()">
+                            <span>
+                        <h2>Physical Details</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showPhysicalDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showPhysicalDetails"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <main class="col-xl-12 " *ngIf="showPhysicalDetails" style="display: contents;">
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerBodyType" title="Type of body">
+                                <option value = '' selected disabled>Type of body*</option>
+                                <option value = 'Athletic'>Athletic </option>
+                                <option value = 'Slim'>Slim</option>
+                                <option value = 'Average'>Average </option>
+                                <option value = 'Heavy'>Heavy </option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerComplexion" title="Complexion">
+                                <option value = '' selected disabled>Complexion*</option>
+                                <option value = 'Very Fair'>Very Fair </option>
+                                <option value = 'Fair'>Fair</option>
+                                <option value = 'Wheatish'>Wheatish</option>
+                                <option value = 'Wheatish Brown'>Wheatish Brown</option>
+                                <option value = 'Dark'>Dark</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerHeight" title="Height">
+                                <option value = '' selected disabled>Height*</option>
+                                <option value = '140'>140</option>
+                                <option value = '141'>141</option>
+                                <option value = '142'>142</option>
+                                <option value = '143'>143</option>
+                                <option value = '144'>144</option>
+                                <option value = '145'>145</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerWeight" title="Weight">
+                                <option value = '' selected disabled>Weight*</option>
+                                <option value = '40-50 Kg'>40-50 Kg</option>
+                                <option value = '50-60 Kg'>50-60 Kg</option>
+                                <option value = '60-70 Kg'>60-70 Kg</option>
+                                <option value = '70-80 Kg'>70-80 Kg</option>
+                                <option value = '80-90 Kg'>80-90 Kg</option>
+                                <option value = '90-100 Kg'>90-100 Kg</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerHairType" title="Hair Type">
+                                <option value = '' selected disabled>Hair Type*</option>
+                                <option value = 'Full Head of Hair'>Full Head of Hair</option>
+                                <option value = 'half Bald'>half Bald</option>
+                                <option value = 'Bald'>Bald</option>
+                                <option value = 'Long'>Long</option>
+                                <option value = 'Short'>Short</option>
+                                <option value = 'BoyCut Short'>BoyCut Short</option>
+                                <option value = 'Other'>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerHairColor" title="Hair Color">
+                                <option value = '' selected disabled>Hair Color*</option>
+                                <option value = 'Black'>Black</option>
+                                <option value = 'Brown'>Brown</option>
+                                <option value = 'Blonde'>Blonde</option>
+                                <option value = 'White'>White</option>
+                                <option value = 'Dyed'>Dyed</option>
+                                <option value = 'Other'>Other</option>
+                            </select>
+                        </div>
+                    </main>
+                    <div class="col-xl-12">
+                        <!-- <h2>Welcome!</h2> -->
+                        <!-- <h3>Hi! We would love to know about you and your family..</h3> -->
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showHealthCollapsible()">
+                            <span>
+                        <h2>Health & Habits</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showHealthDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showHealthDetails"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <main class="col-xl-12 " *ngIf="showHealthDetails" style="display: contents;">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerSmokingHabits" title="Smoking Habits">
+                                <option value = '' selected disabled>Smoking Habits*</option>
+                                <option value = 'Yes'>Yes </option>
+                                <option value = 'Occasionally'>Occasionally</option>
+                                <option value = 'No'>No </option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerHubblyBubbly" title="Hubbly Bubbly">
+                                <option value = '' selected disabled>Hubbly Bubbly*</option>
+                                <option value = 'Yes'>Yes</option>
+                                <option value = 'Occasionally'>Occasionally</option>
+                                <option value = 'No'>No </option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerEatingHabits" title="Eating Habits">
+                                <option value = '' selected disabled>Eating Habits*</option>
+                                <option value = 'Vegetarian'>Vegetarian</option>
+                                <option value = 'Non-Vegetarian'>Non-Vegetarian</option>
+                                <option value = 'Eggetarian'>Eggetarian </option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerDrinkingHabits" title="Drinking Habits">
+                                <option value = '' selected disabled>Drinking Habits*</option>
+                                <option value = 'Yes'>Yes</option>
+                                <option value = 'Occasionally'>Occasionally</option>
+                                <option value = 'No'>No </option>
+                            </select>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="partnerLifestyle" title="Life Style">
+                                <option value = '' selected disabled>Life Style*</option>
+                                <option value = 'Active'>Active</option>
+                                <option value = 'Healthy'>Healthy</option>
+                                <option value = 'Socially'>Socially </option>
+                                <option value = 'Nomadic'>Nomadic </option>
+                                <option value = 'Solo'>Solo </option>
+                                <option value = 'Rural'>Rural </option>
+                            </select>
+                        </div>
+                    </main>
+                    <div class="col-xl-12 ">
+                        <!-- <h3 style= "margin-bottom : 0px !important">Documents Verification.</h3>
+                        <hr/> -->
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showAboutCollapsible()">
+                            <span>
+                        <h2>About Desired Partner*</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showAbouts"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showAbouts"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="col-xl-12" *ngIf="showAbouts" style="display: contents;">
+                        <!-- <h4>Here is your chance to make your profile stand out!</h4> -->
+                        <textarea class="form-control" data-toggle="tooltip" data-placement="top" title="Write Something about your desired partner.." formControlName="PartnerBio" placeholder="Write Something about your desired partner"></textarea>
+                    </div>
+                    <div class="col-xl-12 btnDiv" style="display: contents;">
+                        <button class="btnClass " type="submit" id="add-profile" href="javascript:;" [disabled]="registrationForm4.invalid" [ngClass]="{'disableCss': registrationForm4.invalid}" (click)="registrationFunc()">
+                            Looks Good To Proceed
+                        </button>
+                        <!-- <button class="btnClass" (click)="skipFunc()">I will add this later</button> -->
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

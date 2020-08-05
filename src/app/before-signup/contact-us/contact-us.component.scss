@@ -1,0 +1,40 @@
+.signup-page-1 {
+    padding: 15px 15px;
+    margin: 15px 0px 10px;
+}
+
+.signup-page-1 form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.signup-page-1 h4 {
+    margin: 0;
+}
+
+i#show-pass {
+    bottom: 25%;
+    right: 3%;
+}
+
+i#none-pass {
+    bottom: 25%;
+    right: 3%;
+}
+
+@media screen and (max-width: 460px) {
+    .common-section .about-wedding-app {
+        padding: 10px 0px 30px 10px;
+    }
+
+    #row_margin {
+        margin-right: 0;
+    }
+}
+//Aashish Css
+.container{min-height:calc(100vh - 500px);}
+.boldClass {
+    font-size: larger;
+    font-weight: 600;
+    color: #000;
+}  

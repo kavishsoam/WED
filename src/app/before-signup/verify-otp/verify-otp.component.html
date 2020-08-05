@@ -1,0 +1,34 @@
+<section>
+    <div class="forgot-password">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="signup-page-1">
+                        <!-- <div class="col-12">
+             <div class="form-block max-WT-650 middle-form"> -->
+                        <form>
+                            <div class="form-box max-WT-600 middle-form">
+                                <div class="form-head text-center">
+                                    <h5 class="mb-2">Verify Mobile Number</h5>
+                                </div>
+                                <p class="pb-4 text-center font-13">Enter the OTP sent to your registered Mobile or Email Address.</p>
+                                <div class="main-form mt20 p-4">
+                                    <div class="autotabbed text-center">
+                                        <input class="otpField" type="tel" maxlength="1" name="one" [(ngModel)]="otp.one" (keyup)="onKey($event,otp.one,1)" id="otp1" autocomplete="off">
+                                        <input class="otpField" type="tel" maxlength="1" name="two" [(ngModel)]="otp.two" (keyup)="onKey($event,otp.two,2)" id="otp2" autocomplete="off">
+                                        <input class="otpField" type="tel" maxlength="1" name="three" [(ngModel)]="otp.three" (keyup)="onKey($event,otp.three,3)" id="otp3" autocomplete="off">
+                                        <input class="otpField" type="tel" maxlength="1" name="four" [(ngModel)]="otp.four" (keyup)="onKey($event,otp.four,4)" id="otp4" autocomplete="off">
+                                    </div>
+                                    <div class="button-block mt-5 mb-4 text-center">
+                                        <button class="btn btn-common max-WT-250" [disabled]='otp.one == "" || otp.two == "" || otp.three == "" || otp.four == ""' (click)='verifyOTP()'>VERIFY</button>
+                                    </div>
+                                    <p [ngClass]="{'disabled': counter > 1 }" class="font-13 text-center"> Didn't receive an OTP?<a href="javascript:void(0)" (click)='resendOTP()' class="link"> Resend OTP </a>in {{counter}} sec </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

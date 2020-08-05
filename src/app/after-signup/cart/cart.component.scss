@@ -1,0 +1,27 @@
+.signup-page-1 {
+    padding: 15px 15px;
+    margin: 15px 0px 10px;
+}
+
+.signup-page-1 form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+i#show-pass {
+    bottom: 22%;
+}
+
+i#none-pass {
+    bottom: 22%;
+}
+
+
+
+@media screen and (max-width:767px) {
+    table.table.table-bordered {
+        width: 770px;
+        overflow: auto;
+    }
+
+}

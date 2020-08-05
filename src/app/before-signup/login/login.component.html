@@ -1,0 +1,140 @@
+<section>
+    <div class="forgot-password">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 xol-12">
+                    <div class="forgot-password-form login-form signup-page-1">
+                        <h3>Welcome back!</h3>
+                        <h4>Login to continue..</h4>
+
+
+                        <div class="row">
+                            <div class="column" (click) = "selectLoginType('mobile')">
+                              <div class="card"    [ngClass]="{'cardToggle': loginType == 'mobile'}">
+                                <p><i class="fa fa-mobile" aria-hidden="true"></i></p>
+                                <!-- <h3>Via</h3> -->
+                                <p>Mobile</p>
+                              </div>
+                            </div>
+                          
+                            <div class="column" (click) = "selectLoginType('email')">
+                              <div class="card"  [ngClass]="{'cardToggle': loginType == 'email'}">
+                                <p><i class="fa fa-envelope" aria-hidden="true"></i></p>
+                                <!-- <h3>Via</h3> -->
+                                <p>Email</p>
+                              </div>
+                            </div>
+                        </div>
+
+
+
+                        <form [formGroup] = "mobileLoginForm" *ngIf = "loginType == 'mobile'">
+                            <div class = 'mt-5' >
+                                <div class="form-group d-flex" >
+                                <select class="form-control select-custome max-WT-180 select-border" formControlName = "countryCode" >
+                                        <option *ngFor = "let data of countryArr" [value] = "data?.code"> {{data?.code}}     {{data?.country}} </option> 
+                                </select>
+                                    <input type="tel" class="form-control" data-toggle="tooltip" data-placement="top" title = "Phone Number"  formControlName = "mobile"  placeholder="Mobile number*">
+                                    <!-- <label *ngIf="mobileLoginForm.get('mobile').hasError('pattern') &&  mobileLoginForm.get('mobile').dirty"  style="color:red;" >*Please enter valid mobile number.</label>  -->
+
+                                </div>
+                                <h1 *ngIf="mobileLoginForm.get('mobile').hasError('pattern') &&  mobileLoginForm.get('mobile').dirty"  style="color:red;font-size: 13px !important;" [hidden] = "loginType == 'email'">*Please enter valid mobile number.</h1> 
+                                <label>
+                                <div class="form-group d-flex" style="margin-top: 20px!important;">
+                                    <input class="form-control" data-toggle="tooltip" data-placement="top" title = "Password" formControlName = "password"  placeholder="Password*" />
+                                </div>
+
+                                <i style="color:#818181" id="show-pass"  *ngIf="!showEye" (click)="showHidePassword(0)" class="far fa-eye-slash"></i>
+                                <i style="color:#818181" *ngIf="showEye" id="show-pass" (click)="showHidePassword(0)" class="far fa-eye" ></i>
+                            </label>
+                            </div>
+                            <button type="submit" [disabled] = "mobileLoginForm.invalid" [ngClass]="{'disableCss': mobileLoginForm.invalid}" (click) = "loginApiFunc()">LOGIN</button>
+                            <a  href="javascript:;" [routerLink]="['/visitor/forgotPassword']" >Forgot Password?</a>
+                            <p>or</p>
+                            <a href="javascript:;" >New on wedding APP?</a>
+                            <a href="javascript:;" [routerLink]="['/visitor/registrationStep-1']" id="register">REGISTER</a>
+                        </form>
+
+
+
+
+                        <form [formGroup] = "emailLoginForm" *ngIf = "loginType == 'email'">
+                            <div class = 'mt-5' >
+
+                                <div class="form-group d-flex" >
+                                        <input class="form-control" type="text" maxlength="255" data-toggle="tooltip" data-placement="top" title = "Email ID" formControlName = "emailId"  placeholder="Email*">
+                                        
+                                </div>
+                                <h1 *ngIf="emailLoginForm.get('emailId').hasError('pattern') &&  emailLoginForm.get('emailId').dirty"  style="color:red;font-size: 13px !important;" [hidden] = "loginType == 'mobile'" >*Please enter valid Email address.</h1>
+                                
+                                <label>
+                                    <div class="form-group d-flex" style="margin-top: 20px!important;">
+                                        <input type="password" class="form-control" data-toggle="tooltip" data-placement="top" title = "Password" formControlName = "password"  placeholder="Password*" />
+                                    </div>
+                                    <i style="color:#818181" id="show-pass"  *ngIf="!showEye1" (click)="showHidePassword(1)" class="far fa-eye-slash"></i>
+                                    <i style="color:#818181" *ngIf="showEye1" id="show-pass" (click)="showHidePassword(1)" class="far fa-eye" ></i>
+                                </label>
+                            </div>
+                            <button type="submit" [disabled] = "emailLoginForm.invalid" [ngClass]="{'disableCss': emailLoginForm.invalid}" (click) = "loginApiFunc()">LOGIN</button>
+                            <a  href="javascript:;" [routerLink]="['/visitor/forgotPassword']" >Forgot Password?</a>
+                            <p>or</p>
+                            <a href="javascript:;" >New on wedding APP?</a>
+                            <a href="javascript:;" [routerLink]="['/visitor/registrationStep-1']" id="register">REGISTER</a>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 xol-12">
+                    <div class="find-special-someone">
+                        <h3>Find your Special Someone</h3>
+                        <div class="find-someone">
+                            <div class="find-icon">
+                                <div class="icon-1">
+                                    <div class="icon-2">
+                                        <a href="#">
+                                            <i class="fas fa-edit" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="find-content">
+                                <h2>Login</h2>
+                                <p>Login and complete or Update your Profile</p>
+                            </div>
+                        </div>
+                        <div class="find-someone">
+                            <div class="find-icon">
+                                <div class="icon-3">
+                                    <div class="icon-4">
+                                        <a href="#">
+                                            <i class="fas fa-users" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="find-content">
+                                <h2>Connect</h2>
+                                <p>Select & Connect with Matches you like</p>
+                            </div>
+                        </div>
+                        <div class="find-someone">
+                            <div class="find-icon">
+                                <div class="icon-5">
+                                    <div class="icon-6">
+                                        <a href="#">
+                                            <i class="fas fa-comments" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="find-content">
+                                <h2>Interact</h2>
+                                <p>Become a Premium Member & Start a Conversation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

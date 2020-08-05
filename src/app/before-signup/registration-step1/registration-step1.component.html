@@ -1,0 +1,161 @@
+<section>
+    <div class="forgot-password">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="signup-page-1">
+                        <h3>Welcome!</h3>
+                        <h4>Let's start your partner search with this Sign up.</h4>
+                        <form name="mYform" [formGroup]="registratioForm1">
+                            <label>
+                                <div class="form-group d-flex" >
+                                    <input class="form-control" type="text"  data-toggle="tooltip" data-placement="top" title = "User Name" formControlName = "creatorName"  placeholder="Full Name*">                                    
+                                </div>
+
+                                <h1  [ngClass]="{ 'error' : (registratioForm1.get('creatorName').hasError('required') &&  registratioForm1.get('creatorName').dirty)}" *ngIf=" registratioForm1.get('creatorName').hasError('required') &&  registratioForm1.get('creatorName').dirty" style="color:red;font-size:13px!important">*First Name must be filled.</h1>
+                                <h1 *ngIf="registratioForm1.get('creatorName').hasError('pattern') &&  registratioForm1.get('creatorName').dirty"  style="color:red;font-size:13px!important" >*First Name accepts character only.</h1>
+                                <!-- <input type="text" placeholder="Full Name*" name="user-name" id="user_creatorName"> -->
+                                <div class="not-completed">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </label>
+                            <label>
+                                <div class="form-group d-flex" >
+                                    <select class="form-control select-custome max-WT-180 select-border" formControlName = "countryCode" >
+                                            <option *ngFor = "let data of countryArr" [value] = "data?.code"> {{data?.code}}     {{data?.country}} </option> 
+                                    </select>
+                                    <input style="margin-left: 5px;" type="tel" class="form-control" data-toggle="tooltip" data-placement="top" title = "Mobile Number"  formControlName = "mobileNumber"  placeholder="Mobile*">    
+                                 </div>    
+
+                                <h1  [ngClass]="{ 'error' : (registratioForm1.get('mobileNumber').hasError('required') &&  registratioForm1.get('mobileNumber').dirty)}" *ngIf=" registratioForm1.get('mobileNumber').hasError('required') &&  registratioForm1.get('mobileNumber').dirty" style="color:red;font-size:13px!important">*Mobile Number must be filled.</h1>
+                                <h1 *ngIf="registratioForm1.get('mobileNumber').hasError('pattern') &&  registratioForm1.get('mobileNumber').dirty"  style="color:red;font-size: 13px !important;" >*Please enter valid Mobile number.</h1> 
+                                <!-- <input type="tel" placeholder="mobileNumber Number*" name="user-mob" id="user_mobileNumber"> -->
+                                <div class="not-completed-1">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </label>
+
+                            <label>
+                                <div class="form-group d-flex" >
+                                    <input class="form-control" type="text" maxlength="255" data-toggle="tooltip" data-placement="top" title = "Email ID" formControlName = "email"  placeholder="Email*">                                    
+                            </div>
+                            <h1  [ngClass]="{ 'error' : (registratioForm1.get('email').hasError('required') &&  registratioForm1.get('email').dirty)}" *ngIf=" registratioForm1.get('email').hasError('required') &&  registratioForm1.get('email').dirty" style="color:red;font-size:13px!important">*Email must be filled.</h1>
+                            <h1 *ngIf="registratioForm1.get('email').hasError('pattern') &&  registratioForm1.get('email').dirty"  style="color:red;font-size: 13px !important;"  >*Please enter valid Email address.</h1>                           
+    
+                            <div class="not-completed-1">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="completed-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            </label>
+
+                            <label>
+                                <div class="form-group d-flex" >
+                                    <!-- <input class="form-control" type="text"  data-toggle="tooltip" data-placement="top" title = "Create Profile for*" formControlName = "userFullName"  placeholder="Create Profile for*">     -->
+                                    <select class="form-control" data-toggle="tooltip" data-placement="top" title="Create Profile for*" formControlName="userFullName" placeholder="Create Profile for*">
+                                        <option value = '' selected disabled>Create Profile for*</option>
+                                        <option value = 'My-Self'>My-Self</option>
+                                        <option value = 'Son'>Son</option>
+                                        <option value = 'Brother'>Brother</option>
+                                        <option value = 'Daughter'>Daughter</option>
+                                        <option value = 'Sister'>Sister</option>
+                                        <option value = 'Others'>Others</option>
+                                    </select>                                
+                                </div>
+                                <h1  [ngClass]="{ 'error' : (registratioForm1.get('userFullName').hasError('required') &&  registratioForm1.get('userFullName').dirty)}" *ngIf=" registratioForm1.get('userFullName').hasError('required') &&  registratioForm1.get('userFullName').dirty" style="color:red;font-size:13px!important">*Profile Name must be filled.</h1>
+                                <h1 *ngIf="registratioForm1.get('userFullName').hasError('pattern') &&  registratioForm1.get('userFullName').dirty"  style="color:red;font-size:13px!important">*Profile Name accepts character only.</h1>
+                                <!-- <input type="text" placeholder="Create Profile for*" name="profile-for"
+                                    id="creat-for"> -->
+                                <div class="not-completed-2">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed-2">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </label>
+                            <label>
+                                <div class="form-group d-flex" >
+                                    <input class="form-control" type="{{showEye ? 'text' : 'password'}}"  data-toggle="tooltip" data-placement="top" title = "Password" formControlName = "password"  placeholder="Create New Password*">                                    
+                                </div>
+                                <!-- <input type="password" placeholder="Create New Password*" name="user-pass"
+                                    id="creat-pass" /> -->
+                                <div class="not-completed-3">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <!-- <i id="show-pass" class="far fa-eye-slash" title="view password"></i>
+                                <i id="none-pass" class="far fa-eye" title="hide password"></i> -->
+                                <i style="color:#818181" id="show-pass"  *ngIf="!showEye" (click)="showHidePassword()" class="far fa-eye-slash"></i>
+                                <i style="color:#818181" *ngIf="showEye" id="show-pass" (click)="showHidePassword()" class="far fa-eye" ></i>
+                            </label>
+                            <button type="submit" href="javascript:;" [disabled]="registratioForm1.invalid" [ngClass]="{'disableCss': registratioForm1.invalid}" (click)="registrationFnc()">REGISTER</button>
+                            <p>
+                                By clicking on <i>'Register'</i>, you confirm that you accept the <span>Terms of Use</span> and
+                                <span>Privacy Policy</span>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="find-special-someone">
+                        <h3>Find your Special Someone</h3>
+                        <div class="find-someone">
+                            <div class="find-icon">
+                                <div class="icon-1">
+                                    <div class="icon-2">
+                                        <a href="#">
+                                            <i class="fas fa-edit" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="find-content">
+                                <h2>Login</h2>
+                                <p>Login and complete or Update your Profile</p>
+                            </div>
+                        </div>
+                        <div class="find-someone">
+                            <div class="find-icon">
+                                <div class="icon-3">
+                                    <div class="icon-4">
+                                        <a href="#">
+                                            <i class="fas fa-users" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="find-content">
+                                <h2>Connect</h2>
+                                <p>Select & Connect with Matches you like</p>
+                            </div>
+                        </div>
+                        <div class="find-someone">
+                            <div class="find-icon">
+                                <div class="icon-5">
+                                    <div class="icon-6">
+                                        <a href="#">
+                                            <i class="fas fa-comments" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="find-content">
+                                <h2>Interact</h2>
+                                <p>Become a Premium Member & Start a Conversation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

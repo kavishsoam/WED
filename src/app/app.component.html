@@ -1,0 +1,25 @@
+<!-- <mat-progress-bar mode="indeterminate" color="warn" ></mat-progress-bar> -->
+<app-header ></app-header>
+<router-outlet></router-outlet>
+<app-footer ></app-footer>
+ <ngx-spinner
+bdColor = "rgba(51, 51, 51, 0.8)"
+size = "large"
+color = "#fff"
+type = "ball-atom"
+></ngx-spinner> 
+
+<!----------- ngX DATE Picker -------------->
+<!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+    <div class="input-group">
+    <input  class="form-control" disabled="disabled" style="    background-color: #fff !important" placeholder="Select a date" angular-mydatepicker name="dob" 
+    formControlName="dob"[options]="myOptions" #dp="angular-mydatepicker" (dateChanged)="onDateChanged($event)" (input)="onInputFieldChanged($event.target.value)"/>
+    <span class="form-group-btn calendar">
+    <button type="button"  style="padding-right: inherit;" class="btn btn-default btnNew" (click)="dp.clearDate()">
+            <i style="color:#818181" class="far fa-times-circle"></i>
+    </button>
+    <button type="button" class="btn btn-default btnNew" (click)="dp.toggleCalendar()">
+            <i style="color:#818181" class="fa fa-calendar" ></i>
+    </button>
+</span>
+</div> -->

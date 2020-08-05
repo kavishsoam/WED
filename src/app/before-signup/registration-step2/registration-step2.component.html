@@ -1,0 +1,249 @@
+<section>
+    <div class="signup-2">
+        <form [formGroup]="registratioForm2">
+            <div class="container">
+                <div class="row signup-form-2">
+                    <div class="col-xl-12">
+                        <h2>Welcome!</h2>
+                        <h3>Hi! You are joining the Best Matchmaking Experience.</h3>
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showHideCollapsible()">
+                            <span>
+                        <h2>User Details</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showUserDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showUserDetails"></i>
+                        </span>
+                        </div>
+
+                        <!-- <hr/> -->
+                        <!-- <a href="#" class="need-help">Need help writing?</a> -->
+
+                    </div>
+                    <main class="col-xl-12 " *ngIf="showUserDetails" style="display: contents;">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Nick Name" formControlName="userNickname" placeholder="Nick name*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userNickname').hasError('required') &&  registratioForm2.get('userNickname').dirty)}" *ngIf=" registratioForm2.get('userNickname').hasError('required') &&  registratioForm2.get('userNickname').dirty" style="color:red;font-size:13px!important">*Nick Name must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userNickname').hasError('pattern') &&  registratioForm2.get('userNickname').dirty" style="color:red;font-size:13px!important">*Nick Name accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="First Name" formControlName="userFirstName" placeholder="First Name*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userFirstName').hasError('required') &&  registratioForm2.get('userFirstName').dirty)}" *ngIf=" registratioForm2.get('userFirstName').hasError('required') &&  registratioForm2.get('userFirstName').dirty"
+                                style="color:red;font-size:13px!important">*First Name must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userFirstName').hasError('pattern') &&  registratioForm2.get('userFirstName').dirty" style="color:red;font-size:13px!important">*First Name accepts character only.</h1>
+                        </div>
+
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Family Name" formControlName="userFamilyName" placeholder="Family Name*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userFamilyName').hasError('required') &&  registratioForm2.get('userFamilyName').dirty)}" *ngIf=" registratioForm2.get('userFamilyName').hasError('required') &&  registratioForm2.get('userFamilyName').dirty"
+                                style="color:red;font-size:13px!important">*Family Name must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userFamilyName').hasError('pattern') &&  registratioForm2.get('userFamilyName').dirty" style="color:red;font-size:13px!important">*Family Name accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <!-- <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Marital Status" formControlName="userMaritalstatus" placeholder="Marital Status*"> -->
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Marital Status" formControlName="userMaritalstatus" placeholder="Marital Status*">
+                                <option value = '' selected disabled>Marital Status*</option>
+                                <option value = 'Single'>Single</option>
+                                <option value = 'Married'>Married</option>
+                                <option value = 'Divorced'>Divorced</option>
+                                <option value = 'Widowed'>Widowed</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userMaritalstatus').hasError('required') &&  registratioForm2.get('userMaritalstatus').dirty)}" *ngIf=" registratioForm2.get('userMaritalstatus').hasError('required') &&  registratioForm2.get('userMaritalstatus').dirty"
+                                style="color:red;font-size:13px!important">*Marital Status must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userMaritalstatus').hasError('pattern') &&  registratioForm2.get('userMaritalstatus').dirty" style="color:red;font-size:13px!important">*Marital Status accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <!-- <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Nationality" formControlName="userNationality"> -->
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Nationality" formControlName="userNationality">
+                                    <option value ='' selected disabled>Nationality</option>
+                                    <option *ngFor = "let data of countryArr" [value]="data.country">{{data.country}}</option>
+                                </select>
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userNationality').hasError('required') &&  registratioForm2.get('userNationality').dirty)}" *ngIf=" registratioForm2.get('userNationality').hasError('required') &&  registratioForm2.get('userNationality').dirty"
+                                style="color:red;font-size:13px!important">*Nationality must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userNationality').hasError('pattern') &&  registratioForm2.get('userNationality').dirty" style="color:red;font-size:13px!important">*Nationality accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="SocialID" formControlName="userSocialID" placeholder="SocialID*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userSocialID').hasError('required') &&  registratioForm2.get('userSocialID').dirty)}" *ngIf=" registratioForm2.get('userSocialID').hasError('required') &&  registratioForm2.get('userSocialID').dirty" style="color:red;font-size:13px!important">*SocialID must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userSocialID').hasError('pattern') &&  registratioForm2.get('userSocialID').dirty" style="color:red;font-size:13px!important">*SocialID accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Region" formControlName="userRegion" placeholder="Region*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userRegion').hasError('required') &&  registratioForm2.get('userRegion').dirty)}" *ngIf=" registratioForm2.get('userRegion').hasError('required') &&  registratioForm2.get('userRegion').dirty" style="color:red;font-size:13px!important">*Region must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userRegion').hasError('pattern') &&  registratioForm2.get('userRegion').dirty" style="color:red;font-size:13px!important">*Region accepts character only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" disabled=true data-toggle="tooltip" data-placement="top" title="Mobile" formControlName="userMobile" placeholder="Mobile*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userMobile').hasError('required') &&  registratioForm2.get('userMobile').dirty)}" *ngIf=" registratioForm2.get('userMobile').hasError('required') &&  registratioForm2.get('userMobile').dirty" style="color:red;font-size:13px!important">*Mobile must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userMobile').hasError('pattern') &&  registratioForm2.get('userMobile').dirty" style="color:red;font-size:13px!important">*Mobile accepts numeric digits only.</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" disabled=true data-toggle="tooltip" data-placement="top" title="Email" formControlName="userEmail" placeholder="Email*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userEmail').hasError('required') &&  registratioForm2.get('userEmail').dirty)}" *ngIf=" registratioForm2.get('userEmail').hasError('required') &&  registratioForm2.get('userEmail').dirty" style="color:red;font-size:13px!important">*Email must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userEmail').hasError('pattern') &&  registratioForm2.get('userEmail').dirty" style="color:red;font-size:13px!important">*Please enter valid email</h1>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Profile Type" formControlName="userProfileType" placeholder="Profile Type*">
+                                <option value = '' selected disabled>Profile Type*</option>
+                                <option value = 'Public'>Public</option>
+                                <option value = 'Private'>Private</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userProfileType').hasError('required') &&  registratioForm2.get('userProfileType').dirty)}" *ngIf=" registratioForm2.get('userProfileType').hasError('required') &&  registratioForm2.get('userProfileType').dirty"
+                                style="color:red;font-size:13px!important">*ProfileType must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userProfileType').hasError('pattern') &&  registratioForm2.get('userProfileType').dirty" style="color:red;font-size:13px!important">*Please enter valid ProfileType</h1>
+                        </div>
+                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="TermsConditions" formControlName="userTermsConditions" placeholder="TermsConditions*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userTermsConditions').hasError('required') &&  registratioForm2.get('userTermsConditions').dirty)}" *ngIf=" registratioForm2.get('userTermsConditions').hasError('required') &&  registratioForm2.get('userTermsConditions').dirty"
+                                style="color:red;font-size:13px!important">*TermsConditions must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userTermsConditions').hasError('pattern') &&  registratioForm2.get('userTermsConditions').dirty" style="color:red;font-size:13px!important">*Please enter valid TermsConditions</h1>
+                        </div> -->
+                        <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="DiscountCode" formControlName="userDiscountCode" placeholder="DiscountCode*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userDiscountCode').hasError('required') &&  registratioForm2.get('userDiscountCode').dirty)}" *ngIf=" registratioForm2.get('userDiscountCode').hasError('required') &&  registratioForm2.get('userDiscountCode').dirty"
+                                style="color:red;font-size:13px!important">*DiscountCode must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userDiscountCode').hasError('pattern') &&  registratioForm2.get('userDiscountCode').dirty" style="color:red;font-size:13px!important">*Please enter valid DiscountCode</h1>
+                        </div> -->
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12 t_c">
+                            <!-- <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Oath" formControlName="userOath" placeholder="Oath*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userOath').hasError('required') &&  registratioForm2.get('userOath').dirty)}" *ngIf=" registratioForm2.get('userOath').hasError('required') &&  registratioForm2.get('userOath').dirty" style="color:red;font-size:13px!important">*Oath must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userOath').hasError('pattern') &&  registratioForm2.get('userOath').dirty" style="color:red;font-size:13px!important">*Please enter valid Oath</h1> -->
+                            <label class="checkbox-design d-block">
+                                <input type="checkbox" >
+                                <span></span>
+                                <a href= "javascript:;" [routerLink]="['/visitor/termsOfUse']"> Terms & Conditions </a>                                
+                            </label>
+                            <label class="checkbox-design d-block">
+                                <input type="checkbox" >
+                                <span></span>
+                                <a href= "javascript:;" [routerLink]="['/visitor/oath']"> Oath </a>
+                            </label>
+                        </div>
+
+                    </main>
+                    <div class="col-xl-12 ">
+                        <!-- <h3 style= "margin-bottom : 0px !important">Documents Verification.</h3>
+                        <hr/> -->
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showGenderCollapsible()">
+                            <span>
+                        <h2>Gender & Details</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showGenderDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showGenderDetails"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <main class="col-xl-12 " *ngIf="showGenderDetails" style="display: contents;">
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" formControlName="userGender" (change)="genderChange($event)">
+                                <option value = '' selected disabled>Gender*</option>
+                                <option value = 'Male'>Male </option>
+                                <option value = 'Female'>Female </option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userGender').hasError('required') &&  registratioForm2.get('userGender').dirty)}" *ngIf=" registratioForm2.get('userGender').hasError('required') &&  registratioForm2.get('userGender').dirty" style="color:red;font-size:13px!important">*Gender must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userGender').hasError('pattern') &&  registratioForm2.get('userGender').dirty" style="color:red;font-size:13px!important">*Gender accepts character only.</h1>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" *ngIf="showGuardian">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Guardian FirstName" formControlName="userGuardianFName" placeholder="Guardian FirstName*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userGuardianFName').hasError('required') &&  registratioForm2.get('userGuardianFName').dirty)}" *ngIf=" registratioForm2.get('userGuardianFName').hasError('required') &&  registratioForm2.get('userGuardianFName').dirty"
+                                style="color:red;font-size:13px!important">*Guardian FirstName must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userGuardianFName').hasError('pattern') &&  registratioForm2.get('userGuardianFName').dirty" style="color:red;font-size:13px!important">*Guardian FirstName accepts character only.</h1>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" *ngIf="showGuardian">
+                            <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="Guardian LastName" formControlName="userGuardianLName" placeholder="Guardian LastName*">
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userGuardianLName').hasError('required') &&  registratioForm2.get('userGuardianLName').dirty)}" *ngIf=" registratioForm2.get('userGuardianLName').hasError('required') &&  registratioForm2.get('userGuardianLName').dirty"
+                                style="color:red;font-size:13px!important">*Guardian LastName must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userGuardianLName').hasError('pattern') &&  registratioForm2.get('userGuardianLName').dirty" style="color:red;font-size:13px!important">*Guardian LastName accepts character only.</h1>
+                        </div>
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-12" *ngIf="showGuardian">
+                            <!-- <input class="form-control" type="text" data-toggle="tooltip" data-placement="top" title="GuardianRelation" formControlName="userGuardianRelation" placeholder="Guardian Relation*"> -->
+                            <select class="form-control" data-toggle="tooltip" data-placement="top" title="Guardian Relation" formControlName="userGuardianRelation" placeholder="Guardian Relation*">
+                                <option value = '' selected disabled>Guardian Relation*</option>
+                                <option value = 'Father'>Father</option>
+                                <option value = 'Mother'>Mother</option>
+                                <option value = 'Brother'>Brother</option>
+                                <option value = 'Sister'>Sister</option>
+                                <option value = 'Uncle'>Uncle</option>
+                                <option value = 'Aunt'>Aunt</option>
+                                <option value = 'Other'>Other</option>
+                            </select>
+                            <h1 [ngClass]="{ 'error' : (registratioForm2.get('userGuardianRelation').hasError('required') &&  registratioForm2.get('userGuardianRelation').dirty)}" *ngIf=" registratioForm2.get('userGuardianRelation').hasError('required') &&  registratioForm2.get('userGuardianRelation').dirty"
+                                style="color:red;font-size:13px!important">*Guardian Relation must be filled.</h1>
+                            <h1 *ngIf="registratioForm2.get('userGuardianRelation').hasError('pattern') &&  registratioForm2.get('userGuardianRelation').dirty" style="color:red;font-size:13px!important">*Guardian Relation accepts character only.</h1>
+                        </div>
+                    </main>
+
+                    <div class="col-xl-12 ">
+                        <!-- <h3 style= "margin-bottom : 0px !important">Documents Verification.</h3>
+                        <hr/> -->
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showDocumentCollapsible()">
+                            <span>
+                        <h2>Documents Verification</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showDocumentDetails"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showDocumentDetails"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <main class="col-xl-12" *ngIf="showDocumentDetails" style="display: contents;">
+                        <div class="col-xl-6 padding_top">
+                            <span style="margin: 10px 0px 0px 0px;display: inline-block;"> ID </span>
+                            <input style="cursor:pointer" id="file-upload" type="file" name="attach_work_letter" accept=".png, .jpg, .jpeg, .pdf" (change)="onUploadChange($event, 1)" />
+                            <!-- <input id="file-upload" type="file" name="attach_work_letter" required /> -->
+                        </div>
+                        <div class="col-xl-6 padding_top">
+                            <span style="margin: 10px 0px 0px 0px;display: inline-block;"> Work Letter </span>
+                            <!-- <input style="cursor:pointer" id="file-upload" type="file" name="attach_work_letter"  accept=".png, .jpg, .jpeg, .pdf"/> -->
+                            <input style="cursor:pointer" id="file-upload" type="file" name="attach_work_letter" accept=".png, .jpg, .jpeg, .pdf" (change)="onUploadChange($event, 2)" />
+                        </div>
+                        <div class="col-xl-6 padding_top">
+                            <span style="margin: 10px 0px 0px 0px;display: inline-block;"> Document One </span>
+                            <input style="cursor:pointer" id="file-upload" type="file" name="attach_work_letter" accept=".png, .jpg, .jpeg, .pdf" (change)="onUploadChange($event, 3)" />
+                            <!-- <input id="file-upload" type="file" name="attach_work_letter" required /> -->
+                        </div>
+                        <div class="col-xl-6 padding_top">
+                            <span style="margin: 10px 0px 0px 0px;display: inline-block;"> Document Two </span>
+                            <!-- <input style="cursor:pointer" id="file-upload" type="file" name="attach_work_letter"  accept=".png, .jpg, .jpeg, .pdf"/> -->
+                            <input style="cursor:pointer" id="file-upload" type="file" name="attach_work_letter" accept=".png, .jpg, .jpeg, .pdf" (change)="onUploadChange($event, 4)" />
+                        </div>
+                    </main>
+
+                    <div class="col-xl-12 ">
+                        <!-- <h3 style= "margin-bottom : 0px !important">Documents Verification.</h3>
+                        <hr/> -->
+                        <div class="collapsibleClass animate__animated animate__zoomIn" (click)="showAboutCollapsible()">
+                            <span>
+                        <h2>About Yourself</h2>
+                        </span>
+                            <span class="need-help">
+                            <i class="fa fa-chevron-down" aria-hidden="true" *ngIf = "!showAbouts"></i>
+                            <i class="fa fa-chevron-up" aria-hidden="true" *ngIf = "showAbouts"></i>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="col-xl-12" *ngIf="showAbouts" style="display: contents;">
+                        <!-- <h4>Here is your chance to make your profile stand out!</h4> -->
+                        <textarea class="form-control" data-toggle="tooltip" data-placement="top" title="Express Yourself" formControlName="userBio" placeholder="Express yourself*"></textarea>
+                    </div>
+                    <div class="col-xl-12 btnDiv" style="display: contents;">
+                        <button class="btnClass" type="submit" id="add-profile" href="javascript:;" [disabled]="registratioForm2.invalid" [ngClass]="{'disableCss': registratioForm2.invalid}" (click)="registrationFnc()">
+                            Add to my profile
+                        </button>
+                        <button class="btnClass" (click)="skipFunc()">I will add this later</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,72 @@
+.signup-page-1 {
+    padding: 15px 15px;
+    margin: 15px 0px 10px;
+}
+
+.signup-page-1 form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.signup-page-1 h4 {
+    margin: 0;
+}
+
+i#show-pass {
+    bottom: 22%;
+}
+
+i#none-pass {
+    bottom: 22%;
+}
+
+i#show-pass {
+    position: absolute;
+    right: 3%;
+    bottom: 35%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+i#show-pass {
+    bottom: 25%;
+}
+
+i#none-pass {
+    bottom: 25%;
+}
+
+i#none-pass {
+    position: absolute;
+    right: 4%;
+    bottom: 25%;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+@media screen and (max-width: 1220px) {
+    section {
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    section {
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .common-section .about-wedding-app {
+        padding: 0px 0px 0px 10px;
+    }
+
+    section {
+        padding: 10px 0px 30px 0px;
+    }
+}
+
+//Aashish Css
+.container{min-height:calc(100vh - 500px);}
+

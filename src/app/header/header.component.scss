@@ -1,0 +1,87 @@
+.newClass {
+    right: -0% !important;
+    // background: #283338;
+    // padding: 60px 0px 0px 0px !important;
+}
+
+.newClass1 {
+    right: -100% !important;
+    background: #344e62;
+}
+
+.login_form form input:focus {
+    border: none!important;
+    box-shadow: 0 0 0 0.2rem #ffdfbbc4 !important;
+}
+
+.form-group {
+    margin-bottom: 0rem;
+}
+
+.disableCss {
+    background-color: #dddddd !important;
+}
+
+.showOverlay {
+    top: 0px !important;
+}
+
+.hideOverlay {
+    top: -100% !important;
+}
+
+header {
+    color: #000000 !important;
+    background-color: #000000 !important;
+    background: #000000 !important;
+}
+
+.navebar-1 {
+    color: #000000 !important;
+    background-color: #000000 !important;
+    background: #000000 !important;
+}
+
+.loggedIn {
+    background: #6b8a3d !important;
+    color: #000 !important;
+    background-color: #6b8a3d !important;
+    background: rgb(170, 173, 165) !important;
+    padding: 12px 0 0 0px;
+    height: 50px;
+    text-align: center !important;
+}
+
+.show .nav-2 ul li a {
+    display: block;
+    width: 100%;
+    padding: 15px 35px;
+    color: #000000 !important;
+    text-transform: uppercase;
+}
+
+.show .nav-2 ul li a:hover {
+    color: #fff!important;
+}
+
+.show .nav-2 ul li {
+    margin: 0px !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid #ececec !important;
+}
+
+.sidemenuClassNew:hover {
+    background: #9b86ae;
+    width: 100%;
+    margin: 0px !important;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    color: #fff !important;
+}
+
+.sidemenuClassNew {
+    transition: transform .5s;
+}

@@ -1,0 +1,222 @@
+<div class="secrch_partner">
+    <h4 id="hide_search_partner_form" title="close">+</h4>
+    <div class="search_partner_form">
+        <form>
+            <input type="text" name="search_partner" placeholder="search partner">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+</div>
+<header>
+    <div class="top-bar">
+        <div class="navebar-1">
+            <div class="login_form">
+                <div class="login-h2">
+                    <h3 id="close-login_form" title="close">+</h3>
+                </div>
+                <div class="login-inputs">
+                    <div class="login-form-1">
+                        <div class="login-h2">
+                            <h2>LOGIN </h2>
+                        </div>
+                        <form [formGroup]="emailLoginForm">
+                            <div class="form-group d-flex">
+                                <input class="form-control" type="text" maxlength="255" data-toggle="tooltip" data-placement="top" title="Email ID" formControlName="emailId" placeholder="Email*">
+
+                            </div>
+                            <h1 *ngIf="emailLoginForm.get('emailId').hasError('pattern') &&  emailLoginForm.get('emailId').dirty" style="color:red;font-size: 13px !important;" [hidden]="loginType == 'mobile'">*Please enter valid Email address.</h1>
+
+
+                            <div class="form-group d-flex">
+                                <input type="password" class="form-control" data-toggle="tooltip" data-placement="top" title="Password" formControlName="password" placeholder="Password*" />
+                            </div>
+
+                            <button type="submit" [disabled]="emailLoginForm.invalid" [ngClass]="{'disableCss': emailLoginForm.invalid}" (click)="login()">SING IN</button>
+                            <a href="javascript:;" id="none-signin-form" (click)="forgotPassword()">Forgot your password?</a>
+                            <a href="javascript:;" id="creat_account" (click)="createAccount()">Create Account</a>
+                        </form>
+                    </div>
+                    <form>
+                        <div class="forgot-password-form-1">
+                            <div class="login-h2">
+
+                                <h2>FORGOT PASSWORD</h2>
+                            </div>
+                            <h3>We will send you an email to reset your password.</h3>
+                            <input type="email" required placeholder="Email">
+                            <button type="submit">Submit</button>
+                            <a href="#" id="cancle-forgot-form" title="close">Cancle</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-sm-4 col-3">
+                        <div class="nave-1-language">
+                            <form>
+                                <select>
+                                    <option selected>English</option>
+                                    <option>Arabic</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-sm-8 col-9">
+                        <div class="info-button">
+                            <a id="partner_search1" class="fas fa fa-search" style=" display:inline-block;color: #fff;margin-right: 10px;"></a>
+                            <a class="login_form1"><i class = "fas fa-user" style=" display:inline-block;color: #fff;margin-right: 10px;"></i></a>
+
+                            <!-- <a class="fas fa-shopping-cart" href="javascript:;"  ><span
+                                    class="cart_count">3</span></a> -->
+                            <!-- <a class="toggle-button btn-mob"><i class="fa fa-bars" style="display:inline-block;color: #fff;margin-right: 10px;" *ngIf = "isLoggedIn == 'true'"></i></a> -->
+                            <!-- <a class="toggle-button btn-mob"><i class="fas fa-sign-in-alt" style=" display:inline-block;color: #fff;margin-right: 10px;" (click) = "logoutFunc()"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loggedIn" *ngIf='!isEmailVerified'>
+            <p>Please verify your Email Address.</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-sm-3">
+                    <div class="logo">
+                        <a href="javascript:;" [routerLink]="['/visitor/home']"><img src="assets/img/logo2.png" alt="logo" title="logo" /></a>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-sm-9">
+                    <div class="menu">
+                        <div class="menu-links menu-desktop">
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" [routerLink]="['/visitor/home']" [ngClass]="{'active': ToggleTabUrl == 'home'  }">Home</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" [routerLink]="['/visitor/aboutUs']" [ngClass]="{'active': ToggleTabUrl == 'aboutUs'  }">About us</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" [routerLink]="['/visitor/faq']" style="text-transform: inherit;" [ngClass]="{'active': ToggleTabUrl == 'faq'  }">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" [routerLink]="['/visitor/packages']" [ngClass]="{'active': ToggleTabUrl == 'packages'  }">Packages</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="javascript:;" [routerLink]="['/member/profile']" [ngClass]="{'active': ToggleTabUrl == 'profile'  }">Profile</a>
+                                </li> -->
+                                <li>
+                                    <a href="javascript:;" [routerLink]="['/visitor/successStories']" [ngClass]="{'active': ToggleTabUrl == 'successStories'  }">Success Stories</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="mobile-menu">
+                        <!-- <div class="toggle-button btn-mob">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div> -->
+                        <div class="collapse-2">
+                            <h3 id="hide_collapes" title="close">+</h3>
+                            <div class="show">
+                                <div class="nav-2">
+                                    <ul>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/notifications')">
+                                                <i class="far fa-bell" aria-hidden="true"></i>
+                                                <span>Inbox</span>
+                                                <!--<span class="all-inbox">1</span>-->
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/matches')">
+                                                <i class="fas fa-users" aria-hidden="true"></i>
+                                                <span>My Matches</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/pictureBoxes')">
+                                                <i class="fas fa-user" aria-hidden="true"></i>
+                                                <span>Picture Box</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/favourites')">
+                                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                                <span>My Favourite</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/interested')">
+                                                <i class="fas fa-transgender"></i>
+                                                <span>I'm Interested</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/rejected')">
+                                                <i class="fas fa-window-close"></i>
+                                                <span>Rejection</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/proposals')">
+                                                <i class="fas fa-file"></i>
+                                                <span>Proposal</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/profile')">
+                                                <i class="fas fa-user" aria-hidden="true"></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="navigationFunc('/member/subscriptions')">
+                                                <i class="fas fa-money-check-alt"></i>
+                                                <span>My Payment</span>
+                                            </a>
+                                        </li>
+                                        <li class='sidemenuClassNew'>
+                                            <a href="javascript:;" (click)="logoutFunc()">
+                                                <i class="fas fa-sign-in-alt"></i>
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mobile-ul">
+                                        <li>
+                                            <a href="index.html" class="active">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="about-us.html">ABOUT</a>
+                                        </li>
+                                        <li>
+                                            <a href="faqs.html" style="text-transform: inherit;">FAQs</a>
+                                        </li>
+                                        <li>
+                                            <a href="packages.html">PACKAGES</a>
+                                        </li>
+                                        <!-- <li>
+                                            <a href="store.html">Store</a>
+                                        </li> -->
+                                        <li>
+                                            <a href="success-stories.html">SUCCESS STORIES </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</header>

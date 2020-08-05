@@ -1,0 +1,345 @@
+<section>
+    <div class="slider">
+        <div class="img-gradient">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/img/bg-img-0.jpg" alt="slilder image" title="slider" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/bg-img-7.jpg" alt="slilder image" title="slider" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/bg-image-1.jpg" alt="slilder image" title="slider" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/slider-img-2.jpg" alt="slilder image" title="slider" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/slider-img-3.jpg" alt="slilder image" title="slider" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/slider-img-4.jpg" alt="slilder image" title="slider" />
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/slider-img-5.jpg" alt="slilder image" title="slider" />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="row-logo-2">
+            <div class="container">
+                <div class="row">
+                    <img src="assets/img/logo_2.png" alt="logo_2" width="44px" title="logo">
+                </div>
+            </div>
+        </div>
+        <div class="container" style="position: relative;">
+            <div class="row">
+                <div class="slider-content">
+                    <div class="mobile-position">
+                        <div class="millions">
+                            <p>Millions found their perfect match here!</p>
+                            <span>You too can find a life partner</span>
+                            <!-- [routerLink]="['/visitor/registrationStep-1']" id="show_register_form"-->
+                            <a href="javascript:;" [routerLink]="['/visitor/registrationStep-1']">SIGN UP</a>
+                        </div>
+                        <div class="logo_3">
+                            <img src="assets/img/logo_3.png" alt="logo" title="logo">
+                        </div>
+                    </div>
+                    <div class="search-form register_form">
+                        <div class="form-bg-1 signup-page-1">
+                            <form [formGroup]="registratioForm1">
+                                <label>
+                                <div class="form-group d-flex" >
+                                    <input class="form-control" type="text"  data-toggle="tooltip" data-placement="top" title = "User Name" formControlName = "username"  placeholder="Full Name*">                                    
+                                </div>
+
+                                <h1  [ngClass]="{ 'error' : (registratioForm1.get('username').hasError('required') &&  registratioForm1.get('username').dirty)}" *ngIf=" registratioForm1.get('username').hasError('required') &&  registratioForm1.get('username').dirty" style="color:red;font-size:13px!important">*First Name must be filled.</h1>
+                                <h1 *ngIf="registratioForm1.get('username').hasError('pattern') &&  registratioForm1.get('username').dirty"  style="color:red;font-size:13px!important" >*First Name accepts character only.</h1>
+                                <!-- <input type="text" placeholder="Full Name*" name="user-name" id="user_username"> -->
+                                <div class="not-completed">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </label>
+                                <label>
+                                <div class="form-group d-flex" >
+                                    <select class="form-control select-custome max-WT-180 select-border" formControlName = "countryCode" >
+                                            <option *ngFor = "let data of countryArr" [value] = "data?.code"> {{data?.code}}     {{data?.country}} </option> 
+                                    </select>
+                                    <input style="margin-left: 5px;" type="tel" class="form-control" data-toggle="tooltip" data-placement="top" title = "Mobile Number"  formControlName = "mobile"  placeholder="Mobile number*">    
+                                 </div>    
+
+                                <h1  [ngClass]="{ 'error' : (registratioForm1.get('mobile').hasError('required') &&  registratioForm1.get('mobile').dirty)}" *ngIf=" registratioForm1.get('mobile').hasError('required') &&  registratioForm1.get('mobile').dirty" style="color:red;font-size:13px!important">*Mobile must be filled.</h1>
+                                <h1 *ngIf="registratioForm1.get('mobile').hasError('pattern') &&  registratioForm1.get('mobile').dirty"  style="color:red;font-size: 13px !important;" >*Please enter valid mobile number.</h1> 
+                                <!-- <input type="tel" placeholder="Mobile Number*" name="user-mob" id="user_mobile"> -->
+                                <div class="not-completed-1">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </label>
+
+                                <label>
+                                <div class="form-group d-flex" >
+                                    <input class="form-control" type="text" maxlength="255" data-toggle="tooltip" data-placement="top" title = "Email ID" formControlName = "emailId"  placeholder="Email*">                                    
+                            </div>
+                            <h1  [ngClass]="{ 'error' : (registratioForm1.get('emailId').hasError('required') &&  registratioForm1.get('emailId').dirty)}" *ngIf=" registratioForm1.get('emailId').hasError('required') &&  registratioForm1.get('emailId').dirty" style="color:red;font-size:13px!important">*Email must be filled.</h1>
+                            <h1 *ngIf="registratioForm1.get('emailId').hasError('pattern') &&  registratioForm1.get('emailId').dirty"  style="color:red;font-size: 13px !important;"  >*Please enter valid Email address.</h1>                           
+    
+                            <div class="not-completed-1">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <div class="completed-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            </label>
+
+                                <label>
+                                <div class="form-group d-flex" >
+                                    <input class="form-control" type="text"  data-toggle="tooltip" data-placement="top" title = "Create Profile for*" formControlName = "profileFor"  placeholder="Create Profile for*">                                    
+                                </div>
+                                <h1  [ngClass]="{ 'error' : (registratioForm1.get('profileFor').hasError('required') &&  registratioForm1.get('profileFor').dirty)}" *ngIf=" registratioForm1.get('profileFor').hasError('required') &&  registratioForm1.get('profileFor').dirty" style="color:red;font-size:13px!important">*Profile Name must be filled.</h1>
+                                <h1 *ngIf="registratioForm1.get('profileFor').hasError('pattern') &&  registratioForm1.get('profileFor').dirty"  style="color:red;font-size:13px!important">*Profile Name accepts character only.</h1>
+                                <!-- <input type="text" placeholder="Create Profile for*" name="profile-for"
+                                    id="creat-for"> -->
+                                <div class="not-completed-2">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed-2">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </label>
+                                <label>
+                                <div class="form-group d-flex" >
+                                    <input class="form-control" type="{{showEye ? 'text' : 'password'}}"  data-toggle="tooltip" data-placement="top" title = "Password" formControlName = "password"  placeholder="Create New Password*">                                    
+                                </div>
+                                <!-- <input type="password" placeholder="Create New Password*" name="user-pass"
+                                    id="creat-pass" /> -->
+                                <div class="not-completed-3">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="completed-3">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <!-- <i id="show-pass" class="far fa-eye-slash" title="view password"></i>
+                                <i id="none-pass" class="far fa-eye" title="hide password"></i> -->
+                                <i style="color:#818181" id="show-pass"  *ngIf="!showEye" (click)="showHidePassword()" class="far fa-eye-slash"></i>
+                                <i style="color:#818181" *ngIf="showEye" id="show-pass" (click)="showHidePassword()" class="far fa-eye" ></i>
+                            </label>
+                                <!-- <label>
+                            <div class="form-group d-flex" >
+                                <select class="form-control  max-WT-180 select-border" formControlName = "countryCode" >
+                                        <option selected disabled>Matrimony Profile for</option>
+                                        <option value = "Male">Male</option>
+                                        <option value = "Female">Female</option> 
+                                </select>                              
+                             </div>  
+                        </label>  -->
+                                <!-- <select>
+                                <option selected disabled>Matrimony Profile for</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select> -->
+                                <!-- <div class="privacy_policy">
+                                <a href = "javascript:;">أوافق على الشروط و الأحكام</a>
+                                <input type="radio" name="privacy">
+                            </div> -->
+                                <button type="submit" href="javascript:;" [disabled]="registratioForm1.invalid" [ngClass]="{'disableCss': registratioForm1.invalid}" (click)="registrationFnc()">REGISTER FREE</button>
+                                <!-- <button type="submit">REGISTER FREE</button> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <div class="container">
+            <div class="row row_dir">
+                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <div class="column-left">
+                        <h2>About Wedding APP</h2>
+                        <p>
+                            Wedding APP - Saudi No. 1 and Most Trusted Matrimony service, has helped Millions like you.
+                        </p>
+                        <h4>Why Choose Wedding APP</h4>
+                        <p>
+                            {{aboutUs}}
+                        </p>
+                        <!-- <ul>
+                            <li>
+                                <img src="assets/img/right-icon.png" alt="icon image" title="icon" /> No.1 & most trusted matrimony service
+                            </li>
+                            <li>
+                                <img src="assets/img/right-icon.png" alt="icon image" title="icon" /> 100% verified mobile numbers
+                            </li>
+                            <li>
+                                <img src="assets/img/right-icon.png" alt="icon image" title="icon" /> Our largest number of profiles increases your chances of meeting the right person
+                            </li>
+                            <li>
+                                <img src="assets/img/right-icon.png" alt="icon image" title="icon" /> Millions have found their life partner here
+                            </li>
+                            <li>
+                                <img src="assets/img/right-icon.png" alt="icon image" title="icon" /> Trusted service for more than 5 years
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="column-right">
+                        <div class="column-right-video">
+                            <iframe width="445" height="300" [src]="videos" scrolling="no" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="column-right-content">
+                        <h2>#Your story is waiting to happen!</h2>
+                        <div class="login-now">
+                            <p>
+                                The one you are perfect for, is waiting for you to log on.
+                            </p>
+                            <a href="login.html">Login Now</a>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="packages-container" style="padding: 45px 0px 70px; background-color: #ded0c3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="heading">PACKAGES</h1>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 zoom" *ngFor="let data of packagesArr ">
+                    <div class="premium-column-1">
+                        <h2>{{data?.packageType}}</h2>
+                        <span>{{data?.packageTime}} {{data?.packageTimeUnit}}</span>
+                        <!-- <p>40% off <del>SAR 1,000</del></p> -->
+                        <h3 style="color: #51505d;font-size: 20px;">{{data?.currency}} {{data?.packagePrice}}</h3>
+                        <span>{{data?.currency}} {{data?.perMonthPrice}} per month</span>
+                        <a href="javascript:;">Continue</a>
+                        <div class="premium-column-profile">
+                            <p *ngFor='let item of data?.packageDescription'> <i id="check" class="fas fa-check" aria-hidden="true"></i> {{item}}</p>
+                            <!-- <del>Make Contact details visible to all</del>  -->
+                        </div>
+                        <form>
+                            <div class="select-time">
+                                <a href="javascript:;" style="background-color: #ded1c3;color: #ffffff;">Subscribe</a>
+                            </div>
+                        </form>
+                        <img src="assets/img/icon-4.png" alt="silver-img" class="silver" title="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2>Millions have found their life partner here!</h2>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 zoom">
+                    <div class="section-3-column">
+                        <img src="assets/img/column-img-1.jpg" alt="image" title="image" />
+                        <h4>Mohammad & Fatima</h4>
+                        <p>I found a companion for my adventures, on Wedding APP</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 zoom">
+                    <div class="section-3-column">
+                        <img src="assets/img/column-img-1.jpg" alt="image" title="image" />
+                        <h4>Mohammad & Fatima</h4>
+                        <p>I found a companion for my adventures, on Wedding APP</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 zoom">
+                    <div class="section-3-column">
+                        <img src="assets/img/column-img-1.jpg" alt="image" title="image" />
+                        <h4>Mohammad & Fatima</h4>
+                        <p>I found a companion for my adventures, on Wedding APP</p>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="register-free">
+                        <h4>Now it is your turn to be happily married</h4>
+                        <a href="javascript:;" [routerLink]="['/visitor/registrationStep-1']">Register Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2>Trusted by Millions</h2>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                    <div class="trusted">
+                        <div class="border-1">
+                            <div class="border-2">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <div class="trusted-content">
+                            <h4>Best Matches</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                    <div class="trusted">
+                        <div class="border-1">
+                            <div class="border-2">
+                                <img src="assets/img/shield-check-icon.png" alt="icon" title="icon" />
+                            </div>
+                        </div>
+                        <div class="trusted-content">
+                            <h4>Verified Profiles</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                    <div class="trusted">
+                        <div class="border-1">
+                            <div class="border-2">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="trusted-content">
+                            <h4>100% Privacy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

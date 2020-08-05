@@ -1,0 +1,152 @@
+@media screen and (max-width: 460px) {
+    .arrow_up {
+        bottom: 52px;
+    }
+    .signup-2 {
+        padding: 135px 0px 60px 0px;
+    }
+}
+
+//Aashish CSS
+.container {
+    min-height: calc(100vh - 450px);
+}
+
+.signup-2 form input:focus,
+textarea:focus {
+    border: none!important;
+    box-shadow: 0 0 0 0.2rem #ffdfbbc4 !important;
+}
+
+input {
+    border-radius: 5px!important;
+}
+
+h1 {
+    font-weight: 500!important;
+}
+
+.calendar {
+    position: absolute;
+    right: 16px;
+    top: 11px;
+    border: 0px !important
+}
+
+.btnNew {
+    height: 30px !important;
+    cursor: pointer;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 15px !important;
+    background-color: #fff;
+    border: none !important;
+}
+
+#file-upload {
+    padding-top: 6px;
+    margin-top: 0;
+}
+
+.collapsibleClass {
+    display: flex !important;
+    justify-content: space-between !important;
+    border: 2px solid #eaeaea !important;
+    padding: 10px 10px 10px 10px !important;
+    height: 50px !important;
+    border-radius: 5px !important;
+    background-color: #f9f9f9 !important;
+    margin-top: 20px !important;
+}
+
+.btnDiv {
+    margin: 10px !important;
+    margin: 20px 25px 0px 15px;
+}
+
+.signup-2 .signup-form-2 .btnClass {
+    margin: 20px 25px 0px 15px;
+}
+
+.need-help {
+    color: #8f8f8f !important;
+}
+
+.signup-2 .signup-form-2 textarea {
+    margin: 20px 20px !important;
+}
+
+.signup-form-2 {
+    border-radius: 15px !important;
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+    box-shadow: 13px 13px 50px 2px #9a9191 !important;
+}
+
+.signup-2 form select {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    color: rgb(70, 70, 70);
+}
+
+.signup-2 form input:focus,
+select:focus,
+textarea:focus {
+    border: none!important;
+    box-shadow: 0 0 0 0.2rem #ffdfbbc4 !important;
+}
+
+input {
+    border-radius: 5px!important;
+}
+
+select {
+    border-radius: 5px!important;
+}
+
+.user-profile .image-box {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #283338;
+    position: relative;
+}
+
+.user-profile .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-profile .image-box .upload-label {
+    position: absolute;
+    right: -7px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+    margin: 0px;
+    line-height: 28px;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 0 10px #999;
+    color: #283338;
+}
+
+.user-profile .image-box .upload-label input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    opacity: 0;
+}

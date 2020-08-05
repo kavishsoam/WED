@@ -1,0 +1,184 @@
+@media screen and (max-width: 460px) {
+    .arrow_up {
+        bottom: 52px;
+    }
+    .signup-2 {
+        padding: 135px 0px 60px 0px;
+    }
+}
+
+//Aashish CSS
+.container {
+    min-height: calc(100vh - 450px);
+}
+
+.signup-2 form input:focus,
+textarea:focus {
+    border: none!important;
+    box-shadow: 0 0 0 0.2rem #ffdfbbc4 !important;
+}
+
+input {
+    border-radius: 5px!important;
+}
+
+h1 {
+    font-weight: 500!important;
+}
+
+.calendar {
+    position: absolute;
+    right: 16px;
+    top: 11px;
+    border: 0px !important
+}
+
+.btnNew {
+    height: 30px !important;
+    cursor: pointer;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 15px !important;
+    background-color: #fff;
+    border: none !important;
+}
+
+#file-upload {
+    padding-top: 6px;
+    margin-top: 0;
+}
+
+.collapsibleClass {
+    display: flex !important;
+    justify-content: space-between !important;
+    border: 2px solid #eaeaea !important;
+    padding: 10px 10px 10px 10px !important;
+    height: 50px !important;
+    border-radius: 5px !important;
+    background-color: #f9f9f9 !important;
+    margin-top: 20px !important;
+}
+
+.btnDiv {
+    margin: 10px !important;
+    margin: 20px 25px 0px 15px;
+}
+
+.signup-2 .signup-form-2 .btnClass {
+    margin: 20px 25px 0px 15px;
+}
+
+.need-help {
+    color: #8f8f8f !important;
+}
+
+.signup-2 .signup-form-2 textarea {
+    margin: 20px 20px !important;
+}
+
+.signup-form-2 {
+    border-radius: 15px !important;
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+    box-shadow: 13px 13px 50px 2px #9a9191 !important;
+}
+
+.signup-2 form select {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    color: #6e777e;
+}
+
+.signup-2 form input:focus,
+select:focus,
+textarea:focus {
+    border: none!important;
+    box-shadow: 0 0 0 0.2rem #ffdfbbc4 !important;
+}
+
+input {
+    border-radius: 5px!important;
+}
+
+select {
+    border-radius: 5px!important;
+}
+
+label.checkbox-design {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4d4d4d;
+    margin-right: 8px;
+}
+
+label.checkbox-design input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+label.checkbox-design input[type="checkbox"]~span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #ddd;
+}
+
+label.checkbox-design input[type="checkbox"]~span:before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    width: 6px;
+    height: 9px;
+    background: transparent;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    transform: scale(0) rotate(45deg);
+    -webkit-transform: scale(0) rotate(45deg);
+    -ms-transform: scale(0) rotate(45deg);
+}
+
+label.checkbox-design input[type="checkbox"]:checked~span {
+    border: 1px solid #000;
+}
+
+label.checkbox-design input[type="checkbox"]:checked~span:before {
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+    -webkit-transform: scale(1) rotate(45deg);
+    -ms-transform: scale(1) rotate(45deg);
+}
+
+label.checkbox-design.dark {
+    color: #333346;
+}
+
+.t_c {
+    margin: 20px 0px 0px 20px !important;
+}
+
+input[type="checkbox"] {
+    width: 15px !important;
+}
+
+a {
+    color: #c59b6c !important;
+}

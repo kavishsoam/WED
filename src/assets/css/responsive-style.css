@@ -1,0 +1,2563 @@
+@media screen and (max-width:2000px) {
+  .massege {
+    bottom: 100px;
+  }
+
+  .whatsapp {
+    bottom: 146px !important;
+  }
+
+  .music {
+    bottom: 194px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .container {
+    width: 970px;
+  }
+
+  .slider .form-bg-1 form input,
+  .slider .form-bg-1 form select {
+    width: 100%;
+    height: 50px;
+    padding: 0px 5px;
+    border: 1px solid rgb(187, 187, 187);
+    margin: 6px 1px;
+  }
+
+  .slider .form-bg-1 form button {
+    margin: 20px auto 0 auto;
+  }
+
+  .privacy_policy {
+    margin-top: 10px;
+  }
+
+  .massege {
+    bottom: 100px;
+  }
+
+  .whatsapp {
+    bottom: 146px !important;
+  }
+
+  .music {
+    bottom: 194px;
+  }
+
+  .email {
+    bottom: 18px;
+  }
+
+  .section-faqs {
+    padding: 20px 0px;
+  }
+
+  ._faq_column {
+    width: 70%;
+  }
+
+  ._faq_row {
+    justify-content: center;
+  }
+
+  .quick_view_matching_details_ .matching-details-description {
+    width: 1000px;
+  }
+
+  .matchings-links {
+    text-align: center;
+  }
+
+  .aside-left .matchings-links a {
+    display: inline-block;
+    height: auto;
+  }
+
+  header .top-bar .menu .menu-links ul li a {
+    padding: 10px 8px;
+  }
+  
+  ._faq_column{
+      max-height:100%;
+  }
+  #on-mobile{
+      padding-top:30px;
+  }
+}
+
+@media screen and (max-width:1040px) {
+  .quick_view_matching_details_ .matching-details-description {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .picture_box_column {
+    width: 40%;
+  }
+
+  .picture_box_row {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:992px) {
+  header .top-bar .menu .menu-links ul li a {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+
+  .find-special-someone,
+  .forgot-password .forgot-password-form {
+    padding: 30px 0px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 760px;
+  }
+
+  .common-section .about-wedding-app {
+    padding-top: 20px;
+  }
+
+  .privacy_policy {
+    margin-top: 0;
+  }
+
+  .row_dir {
+    flex-direction: column-reverse;
+  }
+
+  .signup-2 {
+    background-color: #f9f9f9;
+    padding: 147px 0px 30px 0px;
+  }
+
+  header .top-bar {
+    box-shadow: 0px 1px 14px -9px rgb(0, 0, 0);
+  }
+
+  .matching-container {
+    padding-top: 126px;
+  }
+
+
+  a#view-icon {
+    display: inline-block;
+  }
+
+  .menu-tab {
+    display: block;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  header .top-bar .menu {
+    text-align: left;
+    margin: 32px 0px 0px 0px;
+  }
+
+  header .top-bar .menu-tab {
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  header .top-bar .menu .menu-links {
+    margin: 0px 0px 5px 0px;
+  }
+
+  .slider .slider-content {
+    top: 42%;
+  }
+
+  .slider .search-form {
+    margin-top: 0px;
+  }
+
+  header .top-bar .logo {
+    padding: 12px 0px;
+    width: 80px;
+    height: auto;
+    margin: 0;
+  }
+
+  .slider .form-bg-1 form input,
+  .slider .form-bg-1 form select,
+  .slider .form-bg-1 form button {
+    width: 175px;
+    height: 40px;
+    padding: 0px 5px;
+    border: 1px solid rgb(187, 187, 187);
+    margin: 0px 0px;
+    font-size: 14px;
+    width: 46%;
+    margin: 10px 6px;
+  }
+
+  .slider .slider-content span {
+    color: #fff;
+    margin: 1px 0px 0px 0px;
+    display: block;
+  }
+
+  .slider .form-bg-1 form button {
+    width: 130px;
+  }
+
+  .find-content p {
+    color: #2f2f2f;
+  }
+
+  /* toggle */
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    float: right;
+    margin-top: -57px;
+    width: 100%;
+  }
+
+  .toggle-button {
+    width: 150px;
+  }
+
+  .nav-2 ul li {
+    float: none;
+    text-align: left;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .nav-2 ul li.border a {
+    border: none;
+  }
+
+  .nav-2 ul li a {
+    color: rgb(46, 46, 46);
+  }
+
+  .toggle-button {
+    width: 80px;
+    height: 50px;
+  }
+
+  .nav-2 {
+    float: right;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .nav-2 {
+    margin-top: 15px;
+  }
+
+  .nav-2 ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .collapse {
+    width: 100%;
+  }
+
+  .show {
+    width: 100%;
+  }
+
+  .nav-2 {
+    margin-top: 64px;
+    width: 100%;
+    position: relative;
+  }
+
+  .toggle-button {
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+  }
+
+  .nav-2 .button {
+    float: right;
+    margin: 20px 0px;
+  }
+
+  .btn-mob.active>span:nth-child(1) {
+    transform: rotate(-21deg);
+  }
+
+  .btn-mob.active>span:nth-child(3) {
+    transform: rotate(16deg);
+  }
+
+  .nav-2 ul li a i,
+  .nav-2 ul li a img {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  /* toggle */
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    right: -0.5%;
+  }
+
+  .slider .search-form {
+    margin-top: 15px;
+  }
+
+  .column-right-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .column-right .column-right-content {
+    position: absolute;
+    top: 77%;
+  }
+
+  .column-right {
+    margin: 25px 0px 10px 0px;
+  }
+
+  .section-3 .section-3-column h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  .column-left ul li {
+    font-size: 14px;
+  }
+
+  .column-left p {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .column-left h2 {
+    margin-bottom: 15px;
+  }
+
+  .section-2 {
+    padding-top: 30px;
+  }
+
+  .section-3 .register-free {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .section-4 .trusted .trusted-content {
+    margin: 20px 0px 0px 10px;
+  }
+
+  .section-4 .trusted .trusted-content h4 {
+    font-size: 18px;
+  }
+
+  .footer-links .link-col ul li a {
+    font-size: 14px;
+  }
+
+  .footer-links .link-col ul {
+    margin: 10px 0px 0px 0px;
+  }
+
+  footer .mobile-footer {
+    display: block;
+  }
+
+  footer .footer {
+    display: none;
+  }
+
+  .chat {
+    margin-bottom: 75px;
+  }
+
+  .chat .header-mobile-links {
+    z-index: 105;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 137px;
+  }
+
+  .chat .all-active-user {
+    position: fixed;
+    top: 0%;
+    left: -120%;
+    z-index: 999;
+    background-color: #fff;
+    min-height: 100vh;
+    opacity: 1;
+    overflow: auto;
+
+  }
+
+  .close-active-user {
+    display: block;
+  }
+
+  .close-active-user {
+    display: flex;
+    line-height: 50px;
+    position: relative;
+  }
+
+  .close-active-user span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: dimgrey;
+  }
+
+  .close-active-user span#close-active,
+  .close-active-user span#close-active-2 {
+    font-size: 30px;
+    color: #f05656;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    transform: rotate(45deg);
+  }
+
+  .close-active-user span i {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .chat .profile {
+    position: fixed;
+    top: 0%;
+    left: -120%;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: 102;
+    padding: 0px 35px;
+    z-index: 999;
+  }
+
+  .chat .profile {
+    margin: 0px 0px 0px 0px;
+  }
+
+  /* 
+  .chat .chat-section {
+    height: 65vh;
+  } */
+
+  .chat .user-info {
+    padding: 15px 10px 10px 10px;
+    position: fixed;
+    width: 100%;
+    top: 165px;
+    z-index: 106;
+    background-color: #ffffff;
+  }
+
+  .chat .text-box form textarea {
+    min-height: 70px;
+  }
+
+  .chat .text-box form button {
+    min-height: 70px;
+  }
+
+  .slider {
+    margin-top: 134px;
+  }
+
+
+
+  .chat {
+    margin-top: 186px;
+  }
+
+  .chat .text-box {
+    background-color: #f7f7f7;
+    padding-top: 40px;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 0px;
+    bottom: 0px;
+  }
+
+  /* 
+  .chat .chat-section {
+    height: 67vh;
+    margin-top: 86px;
+  } */
+
+  .find-special-someone h3 {
+    font-size: 24px;
+  }
+
+  .find-special-someone .find-someone .find-content {
+    margin-left: 10px;
+  }
+
+  .forgot-password {
+    margin-top: 107px;
+  }
+
+  .footer-links {
+    margin-bottom: 45px;
+  }
+
+  .find-special-someone .find-someone .find-icon .icon-1::after,
+  .find-special-someone .find-someone .find-icon .icon-3::after,
+  .find-special-someone .find-someone .find-icon .icon-5::after {
+    right: -8%;
+  }
+
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    right: -0.5%;
+  }
+
+  i#show-pass {
+    bottom: 36%;
+  }
+
+  i#none-pass {
+    bottom: 36%;
+  }
+
+  .signup-2 .signup-form-2 h4 {
+    font-size: 24px;
+    color: rgb(54, 54, 54);
+    margin: 29px 0px 10px 0px;
+  }
+
+  .signup-2 .signup-form-2 button {
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    margin: 0px 0px 15px 0px;
+  }
+
+  #close-mobile-footer-links {
+    display: block;
+    width: 120px;
+    height: 35px;
+    align-items: right;
+    margin: -10px 10px auto auto;
+  }
+
+  #mobile-footer-links {
+    position: fixed;
+    top: 170%;
+    width: 100%;
+    left: 0%;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 999;
+    opacity: 0;
+    padding-top: 70px;
+  }
+
+  .section-4 {
+    margin-bottom: 47px;
+  }
+
+  #close-mobile-footer-links {
+    top: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: -35px;
+    transform: rotate(45deg);
+  }
+
+  .other-link button#other_links {
+    width: 27%;
+  }
+
+  .other-link {
+    overflow: overlay;
+  }
+
+  a.need-help {
+    display: block;
+    text-align: right;
+    margin-top: -55px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+
+  .basic-details .column-3 {
+    padding-top: 12px;
+  }
+
+  .packages-container {
+    padding: 116px 0px 30px 0px;
+  }
+
+  .aside-left .matchings-links a {
+    display: inline-block;
+    height: auto;
+  }
+
+  .matching-container .aside-left {
+    margin: 20px 0px;
+    padding: 10px;
+  }
+
+  .nick-name-details {
+    padding: 10px 20px 10px 0px;
+  }
+
+  .matchings-links {
+    text-align: right;
+  }
+
+  .user-profile-pic img {
+    display: block;
+    margin: auto;
+  }
+
+  .left-aside {
+    display: none;
+  }
+
+  .common-section {
+    padding: 111px 0px 20px 0px;
+  }
+
+  .mobile-menu .collapse-2 {
+    padding-top: 0;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu-desktop {
+    display: block;
+  }
+
+  header .top-bar .menu .menu-links ul li a {
+    font-size: 14px;
+  }
+
+  .slider .img-gradient .slide .carousel-inner .carousel-item {
+    width: 100%;
+    height: 295px;
+  }
+
+  .slider .img-gradient .slide .carousel-inner .carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .slider .slider-content {
+    top: 40%;
+    left: 5%;
+  }
+
+  .mobile-position a {
+    display: none;
+  }
+
+  .mobile-position {
+    text-align: center;
+  }
+
+  .blog-section {
+    padding: 130px 0px 20px 0px;
+  }
+
+  .chat {
+    padding: 0px;
+    margin-top: 195px !important;
+    padding-top: 10px;
+  }
+
+
+  .chat .chat-section {
+    padding-bottom: 10px;
+  }
+
+  .logo-footer img {
+    width: 100%;
+  }
+
+  .other-link h2 {
+    border: none;
+    width: 100%;
+    color: #fff;
+  }
+
+  .search_input {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #313131;
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+    transition: 0.6s;
+  }
+
+  .search_input h4#close_search_input {
+    color: #fff;
+    font-size: 33px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 2px;
+    left: 31px;
+  }
+
+  .search_input form input {
+    width: 70%;
+    height: 40px;
+    padding: 0px 10px;
+    background: #000;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+
+  .search_input form input::placeholder {
+    color: #fff;
+  }
+
+  .search_input form input:focus::placeholder {
+    opacity: 0;
+  }
+
+  .search_input form button {
+    width: 10%;
+    height: 40px;
+    cursor: pointer;
+    background: #000;
+    border: none;
+    outline: none;
+
+  }
+
+  .search_input form button i {
+    color: #fff;
+  }
+
+  .bg-search_input {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.33);
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    bottom: 0;
+    z-index: 999;
+    transition: 0.6s;
+    display: block;
+  }
+
+  .search_partner_form form input {
+    width: 58%;
+  }
+
+  .search_partner_form form button {
+    width: 15%;
+  }
+
+  h4#hide_search_partner_form {
+    top: 45%;
+  }
+
+
+  .slider .search-form {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .mobile-position {
+    position: absolute;
+    top: -205px;
+    right: 12%;
+  }
+
+  .packages-container .premium-column-1 {
+    margin: 20px 0px;
+  }
+
+  img.silver,
+  img.gold,
+  img.diamond {
+    top: -2px;
+  }
+
+  .register_form {
+    margin-top: 15px;
+    width: 327px;
+    position: absolute;
+    right: 1%;
+    top: -270px;
+    z-index: 17;
+    box-shadow: 0px 0px 23px -3px #00000047;
+    background: #fff;
+    height: auto;
+    overflow: unset;
+    opacity: 1;
+    transition: 1s;
+  }
+
+  .search-form.register_form .form-bg-1 form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .privacy_policy {
+    width: 50%;
+  }
+
+  ._faq_column {
+    width: 90%;
+  }
+
+  .picture_box_column {
+    width: 45%;
+  }
+
+  .section-faqs {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .quick_view_matching_details_ .matching-details-description {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  #close-mobile-footer-links {
+    top: 10px;
+  }
+
+  .other-link button#other_links {
+    width: 27%;
+    margin-bottom: 30px;
+  }
+
+  .slider .form-bg-1 form input,
+  .slider .form-bg-1 form select,
+  .slider .form-bg-1 form button {
+    width: 46%;
+    height: 40px;
+    padding: 0px 5px;
+    border: 1px solid rgb(187, 187, 187);
+    margin: 10px 5px;
+    font-size: 14px;
+  }
+
+  .slider .form-bg-1 form select {
+    width: 226px;
+  }
+
+  .slider .slider-content {
+    top: 32%;
+    left: 13px;
+    right: 10px;
+  }
+
+  .slider .search-form {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    right: -0.5%;
+  }
+
+  .column-right .column-right-content {
+    position: absolute;
+    top: 71%;
+  }
+
+  .section-3 .section-3-column {
+    margin: 10px 0px;
+  }
+
+  .link-col {
+    margin: 10px 0px;
+  }
+
+  .chat {
+    margin-bottom: 75px;
+  }
+
+  .chat .all-active-user {
+    position: fixed;
+    top: 0%;
+    left: -120%;
+    z-index: 100;
+    background-color: #fff;
+    height: 100vh;
+    opacity: 0;
+    z-index: 999;
+  }
+
+  .close-active-user {
+    display: flex;
+    line-height: 50px;
+    position: relative;
+  }
+
+  .close-active-user span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: dimgrey;
+  }
+
+  .close-active-user span#close-active {
+    font-size: 30px;
+    color: #2196f3;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    transform: rotate(45deg);
+  }
+
+  .close-active-user {
+    display: block;
+  }
+
+  .chat .profile {
+    position: absolute;
+    top: 0%;
+    left: -120%;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: 102;
+    padding: 0px 35px;
+  }
+
+  .slider {
+    margin-top: 60px;
+  }
+
+  .chat {
+    margin-top: 90px;
+  }
+
+  .find-special-someone h3 {
+    font-size: 18px;
+  }
+
+  .forgot-password .forgot-password-form h4 {
+    font-size: 16px;
+  }
+
+  .forgot-password .forgot-password-form form button,
+  .forgot-password .forgot-password-form form a {
+    width: 100%;
+    display: block;
+    margin: 20px 0px;
+  }
+
+  .find-special-someone .find-someone .find-content {
+    margin: 5px 0px 0px 5px;
+  }
+
+  .find-special-someone .find-someone .find-content h2 {
+    color: #4c4c4c;
+    font-size: 20px;
+  }
+
+  .footer-links {
+    margin-bottom: 45px;
+  }
+
+  .find-special-someone .find-someone .find-icon .icon-1::after,
+  .find-special-someone .find-someone .find-icon .icon-3::after,
+  .find-special-someone .find-someone .find-icon .icon-5::after {
+    right: -9%;
+  }
+
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    right: -0.5%;
+  }
+
+  .signup-page-1 h4 {
+    font-size: 16px;
+  }
+
+  i#show-pass {
+    bottom: 39%;
+  }
+
+  i#none-pass {
+    bottom: 39%;
+  }
+
+  .signup-2 .signup-form-2 button {
+    width: 49%;
+    height: 40px;
+    cursor: pointer;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .aside-left .matchings-links a {
+    display: inline-block;
+    height: 46px;
+    width: 24%;
+    line-height: 46px;
+  }
+
+  .user-profile-pic img {
+    display: block;
+    margin: auto;
+  }
+
+  .nick-name-details {
+    padding: 10px 10px 10px 0px;
+  }
+
+  .matchings-links {
+    text-align: left;
+  }
+
+  /* 
+  a#heart-icon {
+    position: absolute;
+    top: -807%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    width: 18%;
+    height: 36px;
+    line-height: 36px;
+  } */
+  .aside-left .matchings-links a {
+    width: 19%;
+  }
+
+  .user-profile-pic {
+    width: 490px;
+    height: 184px;
+  }
+
+  button#show-filter {
+    display: block;
+    width: 96px;
+    height: 34px;
+    margin: 10px 22px auto auto;
+    background: #b98951;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+  }
+
+  button#close-filter {
+    display: block;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px;
+    background: #b98951;
+    color: #fff;
+    border: none;
+  }
+
+  #on-mobile {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    right: -170%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    background: #fff;
+    width: 100%;
+    opacity: 0;
+    overflow: overlay;
+  }
+
+  .basic-details .filter_1 {
+    margin-top: 14px;
+  }
+
+  .basic-details .filter_2 {
+    margin-top: 44px;
+  }
+
+  h4#hide_search_partner_form {
+    top: 36%;
+  }
+
+
+
+
+
+
+  .product-section {
+    padding: 160px 0px 20px 0px;
+  }
+
+  .qty {
+    width: 35%;
+  }
+
+  .buy {
+    width: 60%;
+    margin: unset;
+  }
+
+  .qty1 {
+    width: 40%;
+  }
+
+  .update {
+    width: 60%;
+  }
+
+  .qty2 {
+    width: 70%;
+  }
+
+  .discount {
+    width: 30%;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    margin: 15px 0px 70px;
+  }
+
+  .login_form {
+    right: -200%;
+  }
+
+  header .top-bar .menu {
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  header .top-bar .menu .menu-links ul li a {
+    font-size: 14px;
+    padding: 10px 3px;
+  }
+
+  ul.mobile-ul {
+    display: block;
+  }
+
+  .mobile-menu .collapse-2 {
+    overflow: auto;
+  }
+
+  header .top-bar .menu .menu-links ul {
+    display: none;
+  }
+
+  .logo_3 {
+    display: none;
+  }
+
+  .mobile-position {
+    position: absolute;
+    top: -39%;
+    left: 27%;
+    color: #000;
+  }
+
+  .common-section .about-wedding-app {
+    padding: 10px 0px 30px 10px;
+  }
+
+  .section-4 .trusted {
+    display: block;
+    text-align: center;
+  }
+
+  .section-4 .trusted .border-1 {
+    margin: 10px auto;
+  }
+
+  .section-4 .trusted .trusted-content {
+    margin: 10px 0px 0px 0px;
+  }
+
+  ._faq_column {
+    width: 100%;
+    margin: 15px 0px;
+  }
+
+  a.blog_column {
+    width: 45%;
+  }
+
+  .picture_box_column {
+    width: 45%;
+    margin: 15px 10px;
+  }
+
+  section._chatting_section {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .quick_view_matching_details_ .matching-details-description {
+    width: 550px;
+  }
+
+  .description-column .description-column-1 {
+    width: 29%;
+  }
+
+  .product-section {
+    padding: 160px 0px 64px 0px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .section-3-column {
+    text-align: center;
+  }
+
+  .quick_view_matching_details_ .matching-details-description {
+    width: 400px;
+  }
+
+  .description-column .description-column-1 {
+    width: 31%;
+  }
+
+  .user-profile-pic {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:520px) {
+
+  .slider .form-bg-1 form input,
+  .slider .form-bg-1 form select,
+  .slider .form-bg-1 form button {
+    width: 96%;
+  }
+
+  .privacy_policy {
+    width: 96%;
+    margin-top: 20px;
+  }
+
+  header .top-bar .logo {
+    padding: 6px 0px;
+    width: 60px;
+  }
+
+  .mobile-menu .toggle-button {
+    top: -55px;
+  }
+
+  .section-3 .section-3-column {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .wedding_music {
+    width: 420px;
+  }
+
+  .section-4 .trusted .trusted-content h4 {
+    font-size: 16px;
+  }
+
+  ._show_hide_faq h1,
+  ._show_hide_faq_add h1 {
+    font-size: 14px;
+  }
+
+  a.blog_column {
+    width: 90%;
+  }
+
+  .picture_box_column {
+    width: 95%;
+    margin: 15px 10px;
+  }
+
+  .chat .user-info {
+    margin-top: -17px;
+    position: fixed;
+    width: 100%;
+    line-height: 35px;
+    z-index: 99;
+  }
+
+  .chat .header-mobile-links {
+    top: 112px;
+  }
+}
+
+@media screen and (max-width:470px) {
+  .find-special-someone .find-someone {
+    display: block;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .chat-box .chat-content p {
+    color: rgb(240, 240, 240);
+  }
+
+  .chat-box .chat-date p {
+    color: rgb(240, 240, 240);
+  }
+
+  .chat .received-chat .chat-box {
+    border: 1px solid #eaeaea;
+  }
+
+  .chat .send-chat .chat-box::after {
+    border-color: transparent transparent transparent #eaeaea;
+  }
+
+  .chat .received-chat .chat-box::after {
+    border-color: transparent #eaeaea transparent transparent;
+  }
+
+  .chat .text-box {
+    background-color: #32393c;
+  }
+
+  .chat .text-box form button {
+    background-color: #525e63;
+    border: 1px solid #32393c;
+  }
+
+  .chat .text-box form textarea {
+    background: #525e63;
+    border: 1px solid #32393c;
+  }
+
+  .chat .text-box form textarea {
+    outline: none;
+    color: #fff;
+  }
+
+  .chat .text-box form textarea::placeholder {
+    color: #fff;
+  }
+
+  .chat .chat-section {
+    background-color: #32393c;
+  }
+
+  .chat .send-chat .chat-box {
+    border: 1px solid #3d3d3d;
+    border: 1px solid #eaeaea;
+  }
+
+  .chat .user-info {
+    background-color: #22282b;
+  }
+
+  .chat .user-info h4 {
+    color: #fff;
+  }
+
+  .chat .user-info p {
+    color: #fff;
+  }
+
+  .chat .header-mobile-links button#user-list,
+  .chat .header-mobile-links button#user-list-profile {
+    background-color: #1c2022;
+  }
+
+  .chat .all-active-user {
+    position: fixed;
+    background: #22282a;
+    overflow-x: hidden;
+  }
+
+  .close-active-user span {
+    color: #fff;
+  }
+
+  .close-active-user span#close-active {
+    font-size: 39px;
+    color: #fff;
+  }
+
+  .chat .active-bar:hover,
+  .chat .active {
+    background-color: #3f494e;
+  }
+
+  .chat .active-bar .active-time span {
+    width: 10px;
+    height: 10px;
+    background: rgb(230, 230, 230);
+  }
+
+  .chat .active .active-time span {
+    background: #000;
+  }
+
+  .chat .active-bar .active-time p {
+    margin: 0;
+    color: #e6e6e6;
+  }
+
+  .chat .active-bar .active-user-name h4 {
+    font-size: 18px;
+    color: #e8e8e8;
+    margin: 0;
+  }
+
+  .chat .active-bar .active-user-name p {
+    color: #e8e8e8;
+  }
+
+  .close-active-user {
+    display: block;
+    background: #181e20;
+  }
+
+  div#profile .close-active-user span {
+    color: #000;
+  }
+
+  div#profile .close-active-user {
+    background: #fff;
+  }
+
+  .wedding_music {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .product-section {
+    padding: 125px 0px 20px 0px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .slider .slider-content span {
+    font-size: 14px;
+  }
+
+  .slider .slider-content p {
+    font-size: 16px;
+  }
+
+  .slider .form-bg-1 form input,
+  .slider .form-bg-1 form select,
+  .slider .form-bg-1 form button {
+    width: 146px;
+    margin: 2px 0px;
+  }
+
+  .slider .form-bg-1 form button {
+    width: 146px;
+  }
+
+  .section-1 h2.find {
+    margin: 40px 0px 19px 0px;
+    font-size: 24px;
+  }
+
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    right: -0.5%;
+  }
+
+  .section-1 .find-someone {
+    margin: 20px 0px;
+  }
+
+  .find-content {
+    margin-top: 5px;
+  }
+
+  .slider-content {
+    padding: 0px 5px;
+  }
+
+  .find-content h2 {
+    color: #363636;
+  }
+
+  .btn-mob>span {
+    display: block;
+    border: 1px solid #838080;
+    margin: 4px auto;
+    transition: 500ms;
+    width: 52%;
+  }
+
+  header .top-bar .logo {
+    padding: 5px 0px 10px 0px;
+  }
+
+  .toggle-button {
+    top: 0%;
+    transform: translate(0px, -43px);
+  }
+
+  .mobile-search-form {
+    display: block;
+  }
+
+  .slider .slider-content {
+    position: static;
+  }
+
+  .slider .form-bg-1 form input,
+  .slider .form-bg-1 form select,
+  .slider .form-bg-1 form button {
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  .mobile-position {
+    position: absolute;
+    top: -30%;
+    left: 17%;
+    color: #000;
+  }
+
+  .column-right .column-right-content {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+  }
+
+  .column-right .column-right-content h2 {
+    font-size: 21px;
+  }
+
+  .section-2 {
+    padding: 20px 0px;
+  }
+
+  .column-left h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .column-left p {
+    font-size: 16px;
+  }
+
+  .column-right .column-right-content .login-now {
+    display: block;
+  }
+
+  .column-right .column-right-content h2 {
+    margin-bottom: 5px;
+  }
+
+  .column-right .column-right-content .login-now a {
+    float: right;
+    margin-top: -36px;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .column-right {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .section-3 .section-3-column {
+    margin: 10px 0px;
+  }
+
+  .section-3 h2 {
+    font-size: 24px;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .find-content h2 {
+    font-size: 24px;
+  }
+
+  .section-1 {
+    padding: 10px 0px 20px 0px;
+  }
+
+  .section-3 .register-free h4 {
+    display: block;
+    padding: 0px 0px 0px 0px;
+    color: #222;
+    font-size: 18px;
+  }
+
+  .section-3 .register-free a {
+    padding: 10px 50px;
+  }
+
+  .link-col {
+    margin: 10px 0px;
+  }
+
+  .footer .copyright {
+    text-align: center;
+  }
+
+  .footer .footer-socal {
+    text-align: center;
+  }
+
+  .column-left ul li {
+    margin: 10px 0px;
+  }
+
+  .column-left h4 {
+    margin: 15px 0px 20px 0px;
+  }
+
+  .chat .all-active-user {
+    position: fixed;
+  }
+
+  .chat .user-info h4 {
+    font-size: 16px;
+  }
+
+  .chat .send-chat .chat-box .chat-content,
+  .chat .received-chat .chat-box .chat-content {
+    font-size: 14px;
+  }
+
+  .chat .received-chat .chat-box .chat-date {
+    font-size: 14px;
+  }
+
+  .chat .send-chat .chat-box .chat-date {
+    font-size: 14px;
+  }
+
+  .chat .header-mobile-links button#user-list {
+    font-size: 16px;
+  }
+
+  .chat .header-mobile-links button#user-list-profile {
+    font-size: 16px;
+  }
+
+  .close-active-user span {
+    font-size: 16px;
+  }
+
+  .chat .profile {
+    position: fixed;
+    top: 0%;
+    left: -120%;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: 999;
+  }
+
+  .chat .user-info {
+    margin: 5px 0px 5px 0px;
+  }
+
+  .chat .send-chat .chat-box {
+    min-width: 150px;
+  }
+
+  .chat .received-chat .chat-box {
+    min-width: 150px;
+  }
+
+  .chat .send-chat .chat-box {
+    padding: 5px 10px;
+  }
+
+  .chat .received-chat .chat-box {
+    padding: 5px 10px;
+  }
+
+  .chat .chat-section {
+    margin-bottom: -58px;
+    position: fixed;
+    margin-top: 52px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .chat .text-box {
+    padding: 22px 0px 0px 0px;
+  }
+
+  .chat .user-info {
+    padding: 0px 10px;
+  }
+
+  .chat .text-box {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+  }
+
+  .chat .text-box form textarea {
+    min-height: 50px;
+    outline: none;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .chat .text-box form textarea:focus {
+    border: 1px solid #2196f3;
+  }
+
+  .chat .text-box form button:focus {
+    border: 1px solid #2196f3;
+  }
+
+  .chat .text-box form button {
+    min-height: 50px;
+    outline: none;
+  }
+
+  .slider {
+    position: relative;
+    margin-top: 47px;
+  }
+
+  .chat {
+    margin-top: 66px;
+  }
+
+  .chat .header-mobile-links {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .chat .user-info {
+    margin-top: -17px;
+    position: fixed;
+    width: 100%;
+    line-height: 35px;
+    z-index: 99;
+  }
+
+  .chat .header-mobile-links {
+    top: 109px;
+  }
+
+  .forgot-password {
+    margin-top: 71px;
+  }
+
+  .forgot-password .forgot-password-form form button,
+  .forgot-password .forgot-password-form form a {
+    margin: 20px 0px;
+  }
+
+  .forgot-password .forgot-password-form {
+    margin-bottom: 30px;
+  }
+
+  .find-special-someone .find-someone .find-icon .icon-1::after,
+  .find-special-someone .find-someone .find-icon .icon-3::after,
+  .find-special-someone .find-someone .find-icon .icon-5::after {
+    right: 4%;
+  }
+
+  .find-special-someone .find-someone .find-content h2 {
+    font-size: 20px;
+  }
+
+  .find-content {
+    margin-top: 17px;
+  }
+
+  .find-special-someone .find-someone .find-icon .icon-1::after,
+  .find-special-someone .find-someone .find-icon .icon-3::after,
+  .find-special-someone .find-someone .find-icon .icon-5::after {
+    right: -9%;
+  }
+
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    right: -14.5%;
+  }
+
+  .signup-page-1 h4 {
+    font-size: 16px;
+  }
+
+  .signup-page-1 {
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+
+  .find-special-someone h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+  }
+
+  .signup-page-1 form p {
+    margin-top: 16px;
+  }
+
+  i#show-pass {
+    bottom: 34%;
+  }
+
+  i#none-pass {
+    bottom: 34%;
+  }
+
+  footer .mobile-footer .user-profile-links a {
+    font-size: 12px;
+  }
+
+  .all-links-menu #other-links {
+    font-size: 14px;
+  }
+
+  footer .mobile-footer .user-profile-links .all-links-menu {
+    margin-bottom: 0;
+  }
+
+  .signup-form-2 h2 {
+    font-size: 18px;
+  }
+
+  .signup-form-2 h3 {
+    font-size: 18px;
+  }
+
+  .signup-2 {
+    padding-top: 65px;
+  }
+
+  .signup-form-2 h3 {
+    margin-bottom: 16px;
+  }
+
+
+  .signup-2 .signup-form-2 {
+    padding: 10px 10px;
+  }
+
+  .signup-2 .signup-form-2 button {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .signup-2 .signup-form-2 h4 {
+    font-size: 16px;
+    color: rgb(54, 54, 54);
+    margin: 30px 0px 10px 0px;
+  }
+
+  #mobile-footer-links {
+    position: fixed;
+    top: 170%;
+    width: 100%;
+    left: 0%;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 9991;
+    opacity: 0;
+  }
+
+  .section-4 {
+    margin-bottom: 34px;
+  }
+
+  .other-link button#other_links {
+    width: 46%;
+  }
+
+  #close-mobile-footer-links {
+    top: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: -35px;
+    transform: rotate(45deg);
+  }
+
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    right: -0.5%;
+  }
+
+  .find-someone .find-icon .icon-1 .icon-2::after,
+  .find-someone .find-icon .icon-3 .icon-4::after,
+  .find-someone .find-icon .icon-5 .icon-6::after {
+    top: 15%;
+  }
+
+  a.need-help {
+    display: block;
+    text-align: right;
+    margin-top: -12px;
+    margin-bottom: 0px;
+    color: #000;
+  }
+
+  .packages-container .premium-column-1 h1 {
+    font-size: 24px;
+  }
+
+  .packages-container .premium-column-1 h1 {
+    margin: 3px 0px;
+  }
+
+  .packages-container .premium-column-1 {
+    padding: 20px;
+    margin: 20px 0px;
+  }
+
+  img.silver,
+  img.gold,
+  img.diamond {
+    top: -2px;
+  }
+
+  .packages-container {
+    padding: 75px 0px 30px 0px;
+  }
+
+  .aside-left .matchings-links a {
+    display: inline-block;
+    height: 46px;
+    margin: 0px;
+  }
+
+  .matchings-links {
+    padding-right: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .matching-container {
+    padding: 102px 0px 30px 0px;
+  }
+
+  .nick-name-details {
+    padding: 10px 10px 10px 0px;
+  }
+
+  .nick-name-details h3 {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .nick-name-details img {
+    margin-top: 4px;
+  }
+
+  .nick-name-details span {
+    margin-top: 5px;
+  }
+
+  .aside-left p {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .user-profile-pic img {
+    display: block;
+    margin: auto;
+  }
+
+  .user-profile-pic {
+    margin: 10px 10px 0px 0px;
+    width: 100%;
+    height: 190px;
+  }
+
+  .matching-container .aside-left {
+    padding: 10px;
+  }
+
+  .nick-name-details h3 {
+    margin: 0px 10px 0px 0px;
+    font-size: 18px;
+  }
+
+  .nick-name-details-2 {
+    margin-top: 10px;
+  }
+
+  .matching-container .aside-left {
+    margin: 10px;
+  }
+
+  /* a#heart-icon {
+    position: absolute;
+    top: -680%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    width: 18%;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+  } */
+  .aside-left .matchings-links a {
+    width: 18%;
+  }
+
+  #on-mobile {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    right: -170%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    background: #fff;
+    width: 100%;
+    opacity: 0;
+    overflow: overlay;
+  }
+
+  .heading {
+    display: block;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    color: #3d3d3d;
+    font-size: 18px;
+  }
+
+  .matching-details-description .about-description {
+    padding: 0px 5px;
+  }
+
+  .matching-details-description .education-description,
+  .matching-details-description .family-description,
+  .matching-details-description .desired-partner-description {
+    padding: 0;
+  }
+
+  .matching-details-description .desired-partner-description .flex-column-1 {
+    padding: 12px 0px 5px 0px;
+  }
+
+  .matching-details-description .desired-partner-description .flex-column-1 .details-last-ans {
+    width: 8%;
+  }
+
+  .matching-details-description .desired-partner-description .flex-column-1 .details-name {
+    width: 31%;
+  }
+
+  .matching-details-description .desired-partner-description .flex-column-1 .details-ans {
+    width: 61%;
+  }
+
+  .matching-details-description .desired-partner-description .flex-column-1 .details-ans h4 {
+    font-size: 14px;
+  }
+
+  .matching-details-description .desired-partner-description .flex-column-1 .details-name h3 {
+    font-size: 14px;
+  }
+
+  .matching-details-description .desired-partner-description h4 {
+    margin: 20px 0px 30px 0px;
+  }
+
+  .matching-details-description .desired-partner-description .details-ans h4 {
+    margin: 0;
+  }
+
+  .matching-details-description .desired-partner-description:last-child {
+    border-bottom: none;
+  }
+
+  .matching-details-description .lifestyle .she-likes div:nth-child(1) {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .matching-details-description .lifestyle .she-likes {
+    display: flex;
+    margin: 20px 0px 0px 10px;
+  }
+
+  .matching-details-description .family-description h4 {
+    margin-top: 20px;
+  }
+
+  .matching-details-description .about-description h3 {
+    font-size: 20px;
+  }
+
+  .last-signup .desired-partner-profile h3 {
+    font-size: 16px;
+  }
+
+  .last-signup .desired-partner-profile {
+    padding: 15px 5px;
+  }
+
+  .last-signup {
+    padding-top: 120px;
+  }
+
+  .basic-details .column-3 a {
+    width: 80px;
+    font-size: 14px;
+  }
+
+  .basic-details .edit-1 a {
+    margin: 0px 0px 9px 0px;
+  }
+
+  .basic-details .edit-2 a {
+    margin: 0px 0px 25px 0px;
+  }
+
+  .basic-details .column-2 p {
+    margin: 10px 0px;
+  }
+
+  .basic-details .filter_1 {
+    margin-top: 14px;
+  }
+
+  .basic-details .filter_2 {
+    margin-top: 44px;
+  }
+
+  header .top-bar .logo {
+    width: 60px;
+    padding: 8px 0px 8px 0px;
+  }
+
+  .common-section .about-wedding-app {
+    padding: 0px;
+  }
+
+  .common-section {
+    padding: 108px 0px 20px 0px;
+  }
+
+  .common-section .about-wedding-app .wedding_app img {
+    width: 170px;
+    height: auto;
+  }
+
+  .common-section .about-wedding-app .wedding_app h2 {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  .blog-section {
+    padding: 60px 0px 20px 0px;
+  }
+
+  .blog-section h6 span {
+    font-size: 22px;
+  }
+
+  .blog-details-content h4 {
+    font-size: 16px;
+  }
+
+  .login_form {
+    width: 100%;
+  }
+
+  .mobile-menu .toggle-button {
+    display: block;
+    width: 63px;
+    margin: auto 0 auto auto;
+    position: absolute;
+    top: -5px;
+    right: 0;
+  }
+
+  .email {
+    right: -30px;
+    width: 76px;
+    height: 40px;
+  }
+
+  .mobile-menu .collapse-2 {
+    padding: 0;
+  }
+
+  ul.mobile-ul {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .slider {
+    position: relative;
+    margin-top: 107px;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .slider .img-gradient .slide .carousel-inner .carousel-item {
+    width: 100%;
+    height: 190px;
+  }
+
+  .slider .img-gradient .slide .carousel-inner .carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .mobile-position a {
+    display: none;
+  }
+
+  .find-special-someone .find-someone {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mobile-menu .collapse-2 {
+    width: 100%;
+  }
+
+  .nav-2 ul li {
+    text-align: left;
+  }
+
+  .blog-section {
+    padding: 125px 0px 40px 0px;
+  }
+
+  .career-img img {
+    width: 100%;
+  }
+
+  .career {
+    flex-wrap: wrap;
+  }
+
+  .career .career-column {
+    width: 50%;
+  }
+
+  .chat-box .chat-content p {
+    line-height: 18px;
+  }
+
+  .chat .chat-section {
+    bottom: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
+    top: 182px;
+  }
+
+  .chat {
+    margin-top: 0 !important;
+    padding: 0;
+    margin-bottom: 0px;
+    display: block;
+  }
+
+  .chat-section {
+    height: 100%;
+  }
+
+  .chat .chat-section {
+    padding-bottom: 20px;
+  }
+
+  .packages-container {
+    padding: 104px 0px 30px 0px;
+  }
+
+  .signup-2 {
+    padding-top: 111px;
+  }
+
+  #mobile-footer-links {
+    padding-top: 20;
+  }
+
+  .logo-footer {
+    margin-top: 0;
+  }
+
+  .logo-footer img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+
+  input {
+    font-size: 14px !important;
+  }
+
+  .signup-page-1 form input {
+    height: 42px;
+
+  }
+
+  .common-section .about-wedding-app .wedding_app {
+    padding: 0px 20px;
+  }
+
+  .footer-links {
+    margin-bottom: 0;
+  }
+
+  .common-section .about-wedding-app .wedding_app {
+    width: 96%;
+  }
+
+  .other-link h2 {
+    color: #ebebeb;
+    border: none;
+  }
+
+  .search_partner_form form input {
+    width: 73%;
+  }
+
+  .search_partner_form form button {
+    width: 18%;
+  }
+
+  h4#hide_search_partner_form {
+    position: absolute;
+    top: 33%;
+    right: 8%;
+    transform: rotate(45deg);
+    z-index: 9999;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+
+
+
+  .whatsapp a {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+  .massege a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .massege img {
+    width: 38px;
+  }
+
+  .arrow_up {
+    bottom: 35px;
+  }
+
+  .row-logo-2 img {
+    width: 30px !important;
+  }
+
+
+
+  .signup-page-1 form button {
+    width: 60%;
+  }
+
+  .wedding_music {
+    width: 360px;
+  }
+
+  .music-1 audio {
+    width: 100%;
+  }
+
+  .section-3 h2 {
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  a.blog_column {
+    width: 100%;
+    margin: 15px 0px;
+  }
+
+  .section-picture-box h2 {
+    font-size: 20px;
+  }
+
+  .section-picture-box {
+    margin: 70px 0px 0px 0px;
+  }
+
+  .music-1 {
+    padding: 20px 4px;
+  }
+
+  .wedding_music {
+    padding: 20px 10px;
+  }
+
+  button#quick_view {
+    margin: 0px 4px;
+    padding: 4px 6px;
+  }
+
+  .description-column .description-column-1 {
+    width: 31%;
+  }
+
+  .font_size h2 {
+    font-size: 14px;
+  }
+
+  .close_quick_view_matching_details_ {
+    top: 5px;
+    right: 10px;
+  }
+
+.tab-bg a{
+    padding:8px;
+}
+}
+
+@media screen and (max-width:427px) {
+  .section-4 .trusted .trusted-content h4 {
+    font-size: 14px;
+  }
+
+  .section-4 .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4 {
+    padding: 0px 10px;
+  }
+
+  ._show_hide_faq h1,
+  ._show_hide_faq_add h1 {
+    margin-right: 5px;
+  }
+
+  .quick_view_matching_details_ .matching-details-description {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width:378px) {
+  a._matching_details {
+    padding: 4px 4px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:365px) {
+
+  a._matching_details,
+  button#quick_view {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .wedding_music {
+    width: 320px;
+  }
+
+  a.fas.fa-shopping-cart {
+    display: inline-block;
+    color: #fff;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+
+  .section-4 .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4 {
+    padding: 0px 5px;
+  }
+
+  .info-button a.fas.fa-shopping-cart {
+    display: inline-block;
+    margin-right: 14px;
+  }
+}
+
+@media screen and (max-width:355px) {
+  .nick-name-details-2 {
+    display: block;
+  }
+
+  .quick_view_matching_details_ .matching-details-description {
+    width: 319px;
+  }
+
+  button#quick_view,
+  a._matching_details {
+    padding: 4px 2px;
+  }
+}
+
+@media screen and (max-width:355px) {
+
+  button#quick_view,
+  a._matching_details {
+    font-size: 10px;
+  }
+}
+
+/******************************** Aashish CSS Update ****************************/
+
+@media (max-width: 1024px) {
+
+  .mob-menu{display:block;}
+  .close-menu{display:block;}
+  .menu{opacity:0; visibility:hidden; backface-visibility:hidden; position:fixed; top:0px; right:0px; margin-right:-100%; background:#fff; padding-top:50px; width:300px; height:100vh; overflow:hidden; overflow-y:auto; z-index:1; transition:400ms;}
+  .menu ul li {display:block; border-bottom:1px solid #d8d8d8; }
+  .menu ul li a{color:#122c54;}
+  .menu-slide{margin-right:0; opacity:1; visibility:visible; backface-visibility:visible; transition:400ms;box-shadow: -5px 0 5px -5px #333;}
+  
+}
+

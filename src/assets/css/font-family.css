@@ -1,0 +1,43 @@
+/*@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');*/
+
+
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-Regular.woff2') format('woff2'),
+      url('../fonts/Rajdhani-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-Medium.woff2') format('woff2'),
+      url('../fonts/Rajdhani-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-Light.woff2') format('woff2'),
+      url('../fonts/Rajdhani-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-Bold.woff2') format('woff2'),
+      url('../fonts/Rajdhani-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-Semibold.woff2') format('woff2'),
+      url('../fonts/Rajdhani-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}

@@ -1,0 +1,19 @@
+<section class="section-faqs">
+    <div class="container">
+        <h1 style="text-align: center;font-size: 20px;color: #6d6d6d;margin: 0px 0px 20px 0px;">All FAQs</h1>
+         <div class="_faq_row" >
+            <div class="_faq_column" *ngFor = "let item of faq; let i = index">
+                <div class="_show_hide_faq" (click) = "showHideFunc(item,i)">
+                    <h2><span>Q. {{i+1}}</span> {{item?.question}}</h2>
+                    <span id="span" >
+                        <i class="fa fa-chevron-down" *ngIf = "!item?.showAnswer" aria-hidden="true"></i>
+                        <i class="fa fa-chevron-up" *ngIf = "item?.showAnswer" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div [hidden] = "!item?.showAnswer" class="answerClass animate__animated animate__zoomIn" >
+                    <p class = "mt20"><span>Answer.</span>{{item?.answer}}</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>

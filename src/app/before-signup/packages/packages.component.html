@@ -1,0 +1,31 @@
+<section>
+    <div class="packages-container" style=" background-color: #ded0c3;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="heading">PACKAGES</h1>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 zoom" *ngFor="let data of packagesArr ">
+                    <div class="premium-column-1">
+                        <h2>{{data?.packageType}}</h2>
+                        <span>{{data?.packageTime}} {{data?.packageTimeUnit}}</span>
+                        <!-- <p>40% off <del>SAR 1,000</del></p> -->
+                        <h3 style="color: #51505d;font-size: 20px;">{{data?.currency}} {{data?.packagePrice}}</h3>
+                        <span>{{data?.currency}} {{data?.perMonthPrice}} per month</span>
+                        <a href="javascript:;">Continue</a>
+                        <div class="premium-column-profile">
+                            <p *ngFor='let item of data?.packageDescription'> <i id="check" class="fas fa-check" aria-hidden="true"></i> {{item}}</p>
+                            <!-- <del>Make Contact details visible to all</del>  -->
+                        </div>
+                        <form>
+                            <div class="select-time">
+                                <a href="javascript:;" style="background-color: #ded1c3;color: #ffffff;">Subscribe</a>
+                            </div>
+                        </form>
+                        <img src="assets/img/icon-4.png" alt="silver-img" class="silver" title="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

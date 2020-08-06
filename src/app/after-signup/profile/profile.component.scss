@@ -1,40 +1,82 @@
 .container {
-    margin-top: 30px;
-    min-height: calc(100vh - 300px);
+  margin-top: 30px;
+  min-height: calc(100vh - 300px);
 }
 
 .borderClass {
-    border: 1px solid gainsboro;
-    height: 600px;
-    border-radius: 15px;
-    margin-top: 10px;
+  border: 1px solid gainsboro;
+  height: 600px;
+  border-radius: 15px;
+  //   margin-top: 10px;
 }
 
 .rowBorderClass {
-    border: 1px solid gainsboro;
-    height: 33.33%;
-    border-radius: 15px;
-    margin-left: 10px;
-    margin-top: 10px;
+  border: 1px solid gainsboro;
+  height: 33.33%;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .headerClass {
-    height: 50px;
-    width: 100%;
-    background-color: #626c71;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    position: relative;
-    justify-content: space-between;
-    display: flex;
-    padding: 15px;
-    color: #fff;
+  height: 50px;
+  width: 100%;
+  background-color: #626c71;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  padding: 15px;
+  color: #fff;
 }
 
 .headerClass h2 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .headerClass i {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.user-profile .image-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #283338;
+  position: relative;
+}
+
+.user-profile .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-profile .image-box .upload-label {
+  position: absolute;
+  right: -7px;
+  bottom: 10px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  text-align: center;
+  margin: 0px;
+  line-height: 28px;
+  font-size: 17px;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 0 10px #999;
+  color: #283338;
+}
+
+.user-profile .image-box .upload-label input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  opacity: 0;
 }

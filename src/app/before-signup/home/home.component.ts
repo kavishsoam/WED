@@ -964,7 +964,7 @@ ngOnInit(): void {
     this.httpService.get('static/getStaticContent?Type=HOME',0).subscribe(res => {
       console.log('homeContent_Succ ==>',res);
       if(res['responseCode'] == 200) {
-        this.bannerImages = res['result'][0]['bannerImages'];
+        this.imageCollection(res);
         this.aboutUs = res['result'][0]['About_Wedding_APP'];
         let url = res['result'][0]['youtubeVideos'][0];
         console.log('VideoURL ==>',url);
@@ -977,6 +977,12 @@ ngOnInit(): void {
     })
   }
 
+
+  private imageCollection(res: any) {
+    this.bannerImages = res['result'][0]['bannerImages'].map(element => ({ imageUrl: element, status: true }));
+    this.bannerImages[0]['status'] = false;
+    console.log(this.bannerImages);
+  }
 
   registrationFnc() {
     let data = {

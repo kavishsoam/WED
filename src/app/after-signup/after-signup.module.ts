@@ -13,10 +13,11 @@ import { RejectionListComponent } from './rejection-list/rejection-list.componen
 import { ProposalListComponent } from './proposal-list/proposal-list.component';
 import { PictureBoxesComponent } from './picture-boxes/picture-boxes.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 
 @NgModule({
-  declarations: [MatchListComponent, MatchDetailsComponent, NotificationsComponent, CartComponent, MySubscriptionsComponent, FavouriteListComponent, InterestedListComponent, RejectionListComponent, ProposalListComponent, PictureBoxesComponent, ProfileComponent],
+  declarations: [MatchListComponent, MatchDetailsComponent, NotificationsComponent, CartComponent, MySubscriptionsComponent, FavouriteListComponent, InterestedListComponent, RejectionListComponent, ProposalListComponent, PictureBoxesComponent, ProfileComponent, AddUserComponent],
   imports: [
     CommonModule,
     AfterSignupRoutingModule

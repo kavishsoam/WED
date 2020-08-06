@@ -9,23 +9,24 @@ import { RejectionListComponent } from './rejection-list/rejection-list.componen
 import { ProposalListComponent } from './proposal-list/proposal-list.component';
 import { MySubscriptionsComponent } from './my-subscriptions/my-subscriptions.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { AddUserComponent } from './add-user/add-user.component';
 
 const routes: Routes = [
-  {path:'', redirectTo: 'matches', pathMatch: 'full'},
-  {path:'matches', component: MatchListComponent},
-  {path:'notifications', component: NotificationsComponent},
-  {path:'pictureBoxes', component: PictureBoxesComponent},
-  {path:'favourites', component: FavouriteListComponent},
-  {path:'interested', component: InterestedListComponent},
-  {path:'rejected', component: RejectionListComponent},
-  {path:'proposals', component: ProposalListComponent},
-  {path:'subscriptions', component: MySubscriptionsComponent},
-  {path:'profile', component: ProfileComponent},
+  { path: '', redirectTo: 'matches', pathMatch: 'full' },
+  { path: 'matches', component: MatchListComponent },
+  { path: 'notifications', component: NotificationsComponent },
+  { path: 'pictureBoxes', component: PictureBoxesComponent },
+  { path: 'favourites', component: FavouriteListComponent },
+  { path: 'addUser', component: AddUserComponent },
+  { path: 'interested', component: InterestedListComponent },
+  { path: 'rejected', component: RejectionListComponent },
+  { path: 'proposals', component: ProposalListComponent },
+  { path: 'subscriptions', component: MySubscriptionsComponent },
+  { path: 'profile', component: ProfileComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AfterSignupRoutingModule { }
+export class AfterSignupRoutingModule {}
